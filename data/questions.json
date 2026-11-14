@@ -1,0 +1,2168 @@
+{
+  "subjects": [
+    {
+      "subjectCode": "CST-011",
+      "subjectName": "Database Management System",
+      "semester": 5,
+      "units": [
+        {
+          "unit": 1,
+          "questions": [
+            {
+              "id": "DBMS-U1-Q1",
+              "marks": 5,
+              "text": "Define DBMS and explain its advantages."
+            },
+            {
+              "id": "DBMS-U1-Q2",
+              "marks": 5,
+              "text": "Explain data independence in DBMS."
+            },
+            {
+              "id": "DBMS-U1-Q3",
+              "marks": 10,
+              "text": "Explain the three-schema architecture of DBMS with a diagram."
+            },
+            {
+              "id": "DBMS-U1-Q4",
+              "marks": 10,
+              "text": "Describe different database models with examples."
+            }
+          ]
+        },
+        {
+          "unit": 2,
+          "questions": [
+            {
+              "id": "DBMS-U2-Q1",
+              "marks": 5,
+              "text": "Define primary key and foreign key."
+            },
+            {
+              "id": "DBMS-U2-Q2",
+              "marks": 5,
+              "text": "What is referential integrity?"
+            },
+            {
+              "id": "DBMS-U2-Q3",
+              "marks": 10,
+              "text": "Explain relational algebra operations with examples."
+            },
+            {
+              "id": "DBMS-U2-Q4",
+              "marks": 10,
+              "text": "Explain normalization up to BCNF with examples."
+            }
+          ]
+        },
+        {
+          "unit": 3,
+          "questions": [
+            {
+              "id": "DBMS-U3-Q1",
+              "marks": 5,
+              "text": "What is SQL?"
+            },
+            {
+              "id": "DBMS-U3-Q2",
+              "marks": 5,
+              "text": "Differentiate between DDL and DML."
+            },
+            {
+              "id": "DBMS-U3-Q3",
+              "marks": 10,
+              "text": "Explain different SQL joins with examples."
+            },
+            {
+              "id": "DBMS-U3-Q4",
+              "marks": 10,
+              "text": "Describe SQL aggregate functions and nested queries."
+            }
+          ]
+        },
+        {
+          "unit": 4,
+          "questions": [
+            {
+              "id": "DBMS-U4-Q1",
+              "marks": 5,
+              "text": "Define a database transaction."
+            },
+            {
+              "id": "DBMS-U4-Q2",
+              "marks": 5,
+              "text": "List the ACID properties."
+            },
+            {
+              "id": "DBMS-U4-Q3",
+              "marks": 10,
+              "text": "Explain concurrency control techniques in DBMS."
+            },
+            {
+              "id": "DBMS-U4-Q4",
+              "marks": 10,
+              "text": "Explain serializability and transaction schedules."
+            }
+          ]
+        },
+        {
+          "unit": 5,
+          "questions": [
+            {
+              "id": "DBMS-U5-Q1",
+              "marks": 5,
+              "text": "What is database recovery?"
+            },
+            {
+              "id": "DBMS-U5-Q2",
+              "marks": 5,
+              "text": "Define database indexing."
+            },
+            {
+              "id": "DBMS-U5-Q3",
+              "marks": 10,
+              "text": "Explain database recovery techniques."
+            },
+            {
+              "id": "DBMS-U5-Q4",
+              "marks": 10,
+              "text": "Describe B-tree and B+ tree indexing."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subjectCode": "CST-010",
+      "subjectName": "Design and Analysis of Algorithms",
+      "semester": 5,
+      "units": [
+        {
+          "unit": 1,
+          "questions": [
+            {
+              "id": "DAA-U1-Q001",
+              "marks": 5,
+              "text": "Define an algorithm. List its essential characteristics.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U1-Q002",
+              "marks": 5,
+              "text": "What is asymptotic notation? Differentiate between Big-O, Ω, and Θ.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U1-Q003",
+              "marks": 10,
+              "text": "Analyze the time complexity of Bubble Sort, Selection Sort, and Insertion Sort.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U1-Q004",
+              "marks": 10,
+              "text": "Describe the recursion tree method for solving recurrences. Illustrate with an example.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U1-Q005",
+              "marks": 5,
+              "text": "Discuss asymptotic analysis with best, average and worst-case complexities.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U1-Q006",
+              "marks": 5,
+              "text": "Show that the worst-case running time of Quick Sort is Θ(n²).",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U1-Q007",
+              "marks": 10,
+              "text": "What is a heap? Illustrate Heap Sort on the sequence 2, 5, 16, 4, 10, 23, 39, 18, 26, 15.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U1-Q008",
+              "marks": 10,
+              "text": "Using Merge Sort, sort 15, 10, 5, 20, 25, 30, 40, 45. Show that the running time on n elements is Θ(n log n).",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U1-Q009",
+              "marks": 5,
+              "text": "Define an algorithm. Explain the characteristics of a good algorithm.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U1-Q010",
+              "marks": 5,
+              "text": "Explain time complexity and space complexity with suitable examples.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U1-Q011",
+              "marks": 10,
+              "text": "Describe Divide and Conquer strategy using Binary Search and analyze its time complexity.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U1-Q012",
+              "marks": 10,
+              "text": "Explain Merge Sort with an example. Derive its recurrence relation and time complexity.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U1-Q013",
+              "marks": 5,
+              "text": "Define an algorithm and its performance analysis.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U1-Q014",
+              "marks": 5,
+              "text": "Explain randomized algorithms with a suitable example.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U1-Q015",
+              "marks": 10,
+              "text": "Explain Merge Sort. If worst-case Merge Sort takes 30 seconds for input size 64, approximate the maximum input size solvable in 6 minutes.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U1-Q016",
+              "marks": 10,
+              "text": "Explain worst- and best-case Quick Sort time complexity. With last-element pivot, how many swaps occur while sorting [30,40,50,60,70,80] in ascending order?",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U1-Q017",
+              "marks": 5,
+              "text": "Explain Merge Sort and discuss its time complexity.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U1-Q018",
+              "marks": 5,
+              "text": "Explain Strassen’s Matrix Multiplication and its time complexity.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U1-Q019",
+              "marks": 5,
+              "text": "Solve the recurrence T(n)=7T(n/2)+18n² and determine its time complexity.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U1-Q020",
+              "marks": 5,
+              "text": "Multiply matrices A=[[6,8],[9,7]] and B=[[2,5],[3,6]] using Strassen’s algorithm.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            },
+            {
+              "id": "DAA-U1-Q021",
+              "marks": 5,
+              "text": "State Master’s Theorem and solve T(n)=2T(n/2)+n log n using the theorem.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            },
+            {
+              "id": "DAA-U1-Q022",
+              "marks": 5,
+              "text": "Explain the control abstraction of Divide and Conquer with an example.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            },
+            {
+              "id": "DAA-U1-Q023",
+              "marks": 5,
+              "text": "Using asymptotic notation, show why 10n²+9=O(n) and n²log n=Θ(n²) are incorrect.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            }
+          ]
+        },
+        {
+          "unit": 2,
+          "questions": [
+            {
+              "id": "DAA-U2-Q001",
+              "marks": 5,
+              "text": "What is brute-force technique? Give one example.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U2-Q002",
+              "marks": 5,
+              "text": "What is overlapping subproblems property in Dynamic Programming?",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U2-Q003",
+              "marks": 10,
+              "text": "Solve the 0/1 Knapsack problem using Dynamic Programming with algorithm and complexity analysis.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U2-Q004",
+              "marks": 10,
+              "text": "Explain Longest Common Subsequence (LCS) problem using DP. Derive time complexity.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U2-Q005",
+              "marks": 5,
+              "text": "What is the activity selection problem? Write a greedy approach to solve it.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U2-Q006",
+              "marks": 5,
+              "text": "Differentiate dynamic programming and greedy approaches. Explain the Knapsack problem.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U2-Q007",
+              "marks": 10,
+              "text": "What is the sum of subsets problem? Let w={5,7,10,12,15,18,20} and m=35. Find all subsets summing to m using recursive backtracking, and draw the generated portion of the state-space tree.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U2-Q008",
+              "marks": 10,
+              "text": "Using dynamic programming, find the optimal parenthesization of matrices A1=15×5, A2=5×10, A3=10×20, A4=20×25.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U2-Q009",
+              "marks": 5,
+              "text": "Define Disjoint Set operations. Describe Union and Find algorithms.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U2-Q010",
+              "marks": 5,
+              "text": "Explain AND/OR graphs and their applications.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U2-Q011",
+              "marks": 10,
+              "text": "Elaborate the Hamiltonian Cycle problem using backtracking.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U2-Q012",
+              "marks": 10,
+              "text": "Explain Backtracking Method and illustrate the solution for the 8-Queen problem.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U2-Q013",
+              "marks": 5,
+              "text": "Describe algorithms for Union and Find operations.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U2-Q014",
+              "marks": 5,
+              "text": "Describe ways to determine a Hamiltonian cycle in a graph.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U2-Q015",
+              "marks": 10,
+              "text": "Define backtracking and explain the N-Queen problem with a suitable example.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U2-Q016",
+              "marks": 5,
+              "text": "Differentiate between Backtracking and Branch and Bound.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U2-Q017",
+              "marks": 5,
+              "text": "Explain graph m-coloring using backtracking.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U2-Q018",
+              "marks": 5,
+              "text": "How can the Floyd–Warshall algorithm detect a negative-weight cycle?",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U2-Q019",
+              "marks": 5,
+              "text": "Compare connected components and biconnected components.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U2-Q020",
+              "marks": 5,
+              "text": "Explain how the 8-Queen problem can be solved using backtracking.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U2-Q021",
+              "marks": 5,
+              "text": "Explain AND/OR graphs.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U2-Q022",
+              "marks": 5,
+              "text": "Find minimum and maximum heights of an AVL tree with 11 nodes, assuming root height zero.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            },
+            {
+              "id": "DAA-U2-Q023",
+              "marks": 5,
+              "text": "Define Hamiltonian cycle and explain how to test whether a graph contains one.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            },
+            {
+              "id": "DAA-U2-Q024",
+              "marks": 5,
+              "text": "Explain the Knapsack problem with an example.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            }
+          ]
+        },
+        {
+          "unit": 3,
+          "questions": [
+            {
+              "id": "DAA-U3-Q001",
+              "marks": 5,
+              "text": "Differentiate between BFS and DFS. What is a spanning tree?",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U3-Q002",
+              "marks": 5,
+              "text": "Define topological sorting.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U3-Q003",
+              "marks": 10,
+              "text": "Explain Dijkstra’s algorithm for shortest path with example and complexity.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U3-Q004",
+              "marks": 10,
+              "text": "Describe Ford–Fulkerson algorithm for Network Flow. Give an example.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U3-Q005",
+              "marks": 5,
+              "text": "What are single-source shortest paths? Write Dijkstra’s algorithm.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U3-Q006",
+              "marks": 5,
+              "text": "What is a Fibonacci Heap? Discuss its applications.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U3-Q007",
+              "marks": 10,
+              "text": "Write and explain Kruskal’s algorithm for finding a minimum spanning tree, with a suitable example.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U3-Q008",
+              "marks": 10,
+              "text": "Write the properties of a binomial tree. Draw a binomial heap with keys (7,2,4,17,1,11,6,8,15,10,20).",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U3-Q009",
+              "marks": 5,
+              "text": "Explain the Greedy Method and its characteristics.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U3-Q010",
+              "marks": 5,
+              "text": "Why do greedy algorithms not always give optimal solutions? Explain.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U3-Q011",
+              "marks": 10,
+              "text": "Explain the Minimum Cost Spanning Tree problem and describe Prim’s or Kruskal’s algorithm with an example.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U3-Q012",
+              "marks": 10,
+              "text": "Describe the Single Source Shortest Path problem using Dijkstra’s algorithm with an illustration.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U3-Q013",
+              "marks": 5,
+              "text": "Define a minimum cost spanning tree with a suitable example.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U3-Q014",
+              "marks": 5,
+              "text": "Describe edge relaxation in Dijkstra’s algorithm.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U3-Q015",
+              "marks": 10,
+              "text": "Given jobs J1–J6 with deadlines [5,3,3,2,4,2] and profits [200,180,190,300,120,100], find an optimal job schedule and maximum earned profit.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U3-Q016",
+              "marks": 10,
+              "text": "For greedy Knapsack with n=7, capacity M=15, profits [10,5,15,7,6,18,3], weights [2,3,5,7,1,4,1], find the optimal solution.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U3-Q017",
+              "marks": 10,
+              "text": "For Job Sequencing with Deadlines, n=7, profits [3,5,20,18,1,6,30] and deadlines [1,3,4,3,2,1,2], find the solution generated by the job sequencing algorithm.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U3-Q018",
+              "marks": 5,
+              "text": "What are greedy algorithms? Explain their characteristics and an example.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            },
+            {
+              "id": "DAA-U3-Q019",
+              "marks": 5,
+              "text": "Explain Kruskal’s algorithm to compute a minimum-cost spanning tree.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            },
+            {
+              "id": "DAA-U3-Q020",
+              "marks": 10,
+              "text": "Explain backtracking and solve the 4-Queen problem, drawing the state-space tree.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            },
+            {
+              "id": "DAA-U3-Q021",
+              "marks": 10,
+              "text": "Write Quick Sort and analyze sorting [12,33,23,43,44,55,64,77,76].",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            }
+          ]
+        },
+        {
+          "unit": 4,
+          "questions": [
+            {
+              "id": "DAA-U4-Q001",
+              "marks": 5,
+              "text": "What is computability? Define class P.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U4-Q002",
+              "marks": 5,
+              "text": "What is polynomial-time reduction? Give two examples of NP-complete problems.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U4-Q003",
+              "marks": 10,
+              "text": "Prove that the Clique problem is NP-complete.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U4-Q004",
+              "marks": 10,
+              "text": "Explain SAT problem and show why it is NP-complete.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U4-Q005",
+              "marks": 5,
+              "text": "Explain the Satisfiability problem.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U4-Q006",
+              "marks": 5,
+              "text": "State and explain Cook’s theorem.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U4-Q007",
+              "marks": 10,
+              "text": "What is a nondeterministic algorithm? Prove that the Travelling Salesman Problem is NP-complete.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U4-Q008",
+              "marks": 10,
+              "text": "Discuss classes P, NP, NP-hard and NP-complete, and show their relationships.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U4-Q009",
+              "marks": 5,
+              "text": "Differentiate between Greedy Method and Dynamic Programming.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U4-Q010",
+              "marks": 5,
+              "text": "Explain Optimal Binary Search Tree using dynamic programming.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U4-Q011",
+              "marks": 10,
+              "text": "Define the Matrix Chain Multiplication problem using Dynamic Programming with an example.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U4-Q012",
+              "marks": 10,
+              "text": "Explain the All-Pairs Shortest Path problem using Floyd–Warshall algorithm.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U4-Q013",
+              "marks": 5,
+              "text": "Differentiate greedy and dynamic programming approaches.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U4-Q014",
+              "marks": 5,
+              "text": "Describe how the all-pairs shortest path problem works.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U4-Q015",
+              "marks": 10,
+              "text": "Using dynamic programming, construct an optimal BST for keys [10,20,30,40] with frequencies [4,2,6,3].",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U4-Q016",
+              "marks": 10,
+              "text": "Find the minimum scalar multiplications for matrices A1=10×5, A2=5×20, A3=20×10, A4=10×5 using Matrix Chain Multiplication.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U4-Q017",
+              "marks": 10,
+              "text": "Using dynamic programming, find the optimal matrix chain parenthesization for A1=15×5, A2=5×10, A3=10×20, A4=20×25.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U4-Q018",
+              "marks": 10,
+              "text": "Explain how to construct a minimum spanning tree using Kruskal’s algorithm. Compare it with Prim’s algorithm and list two applications.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U4-Q019",
+              "marks": 10,
+              "text": "Apply Quick Sort to [2,8,7,1,3,5,6,4] and explain its time complexity.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U4-Q020",
+              "marks": 10,
+              "text": "Solve the assignment problem using Branch and Bound for cost matrix [[9,2,7,8],[6,4,3,7],[5,8,1,8],[7,6,9,4]].",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            },
+            {
+              "id": "DAA-U4-Q021",
+              "marks": 10,
+              "text": "Explain Matrix Chain Multiplication using dynamic programming for matrices with dimensions (15×3), (3×10), (10×2).",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            },
+            {
+              "id": "DAA-U4-Q022",
+              "marks": 10,
+              "text": "Write short notes on deterministic and nondeterministic algorithms and the Ford–Fulkerson method.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            }
+          ]
+        },
+        {
+          "unit": 5,
+          "questions": [
+            {
+              "id": "DAA-U5-Q001",
+              "marks": 5,
+              "text": "What is an approximation algorithm? Define approximation ratio.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U5-Q002",
+              "marks": 5,
+              "text": "Differentiate Monte Carlo and Las Vegas algorithms.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U5-Q003",
+              "marks": 10,
+              "text": "Describe approximation algorithms for NP-hard problems with an example.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U5-Q004",
+              "marks": 10,
+              "text": "Consider the Vertex Cover problem for V={1,2,3,4,5}, E={(1,2),(1,3),(2,3),(2,4),(3,5)}. Apply the 2-approximation algorithm, show edge-selection steps, find the approximate cover, and compute its approximation ratio with respect to an optimal solution.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U5-Q005",
+              "marks": 5,
+              "text": "Explore the Set Cover problem using an approximation algorithm.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U5-Q006",
+              "marks": 5,
+              "text": "What are Distributed Hash Tables? Explain their characteristics.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U5-Q007",
+              "marks": 10,
+              "text": "Define approximation algorithms and approximation ratio. Approximate the Travelling Salesman Problem with triangle inequality.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U5-Q008",
+              "marks": 10,
+              "text": "What is a randomized algorithm? Explain its advantages, disadvantages and types.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST010"
+            },
+            {
+              "id": "DAA-U5-Q009",
+              "marks": 5,
+              "text": "Define the Travelling Salesperson problem using Branch and Bound.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U5-Q010",
+              "marks": 5,
+              "text": "Explain the 0/1 Knapsack problem using Branch and Bound.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U5-Q011",
+              "marks": 10,
+              "text": "Explain time and space complexity of dynamic programming solutions.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U5-Q012",
+              "marks": 10,
+              "text": "Explain NP-hard and NP-complete problems. Discuss Cook’s theorem.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST503"
+            },
+            {
+              "id": "DAA-U5-Q013",
+              "marks": 5,
+              "text": "Define Cook’s theorem.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U5-Q014",
+              "marks": 5,
+              "text": "Describe computability classes of problems.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U5-Q015",
+              "marks": 10,
+              "text": "Explain LC and FIFO Branch and Bound techniques with a suitable example.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U5-Q016",
+              "marks": 10,
+              "text": "For four objects with profits [10,10,12,18] and weights [2,4,6,9], describe the order of weights to use in 0/1 Knapsack using Branch and Bound.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U5-Q017",
+              "marks": 5,
+              "text": "State and explain Cook’s theorem.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U5-Q018",
+              "marks": 5,
+              "text": "Show that the Vertex Cover problem is NP-complete.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U5-Q019",
+              "marks": 10,
+              "text": "Discuss classes P, NP, NP-hard and NP-complete with examples.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U5-Q020",
+              "marks": 10,
+              "text": "Explain the all-pairs shortest path problem using dynamic programming.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 503"
+            },
+            {
+              "id": "DAA-U5-Q021",
+              "marks": 5,
+              "text": "Prove that P is a subset of NP.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            },
+            {
+              "id": "DAA-U5-Q022",
+              "marks": 5,
+              "text": "Explain the Travelling Salesman Problem.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            },
+            {
+              "id": "DAA-U5-Q023",
+              "marks": 10,
+              "text": "Discuss approximation algorithms for NP-hard problems.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            },
+            {
+              "id": "DAA-U5-Q024",
+              "marks": 10,
+              "text": "Explain polynomial-time reduction and reduction of Clique to Vertex Cover.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            },
+            {
+              "id": "DAA-U5-Q025",
+              "marks": 10,
+              "text": "Construct a Red–Black Tree by inserting [41,38,31,12,19,8] and show successive deletion of keys [8,12,1,41] as specified in the source paper.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST-503"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subjectCode": "CST-012",
+      "subjectName": "Compiler Design",
+      "semester": 5,
+      "units": [
+        {
+          "unit": 1,
+          "questions": [
+            {
+              "id": "CD-U1-Q001",
+              "marks": 5,
+              "text": "Explain lexeme. How are tokens generated for lexemes? Give an example of lexeme identification and token generation.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U1-Q002",
+              "marks": 5,
+              "text": "Define finite automata with an example.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U1-Q003",
+              "marks": 10,
+              "text": "Explain the structure of a compiler and each phase in detail.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U1-Q004",
+              "marks": 10,
+              "text": "Write short notes on (a) input buffering and (b) symbol table, with examples.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U1-Q005",
+              "marks": 5,
+              "text": "Describe the language denoted by the regular expression a*ba*ba*ba*.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U1-Q006",
+              "marks": 5,
+              "text": "Explain the phases of a compiler in brief.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U1-Q007",
+              "marks": 10,
+              "text": "For the context-free grammar S → SS+ | SS* | a, show how the string aa+a* is generated. Construct its parse tree and justify the language generated.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U1-Q008",
+              "marks": 10,
+              "text": "Construct a minimum-state DFA for the regular expression (a|b)*a(a|b).",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U1-Q009",
+              "marks": 5,
+              "text": "Differentiate between a compiler and an interpreter.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U1-Q010",
+              "marks": 5,
+              "text": "Discuss the actions of every compiler phase for the statement Position := initial + rate * 60.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U1-Q011",
+              "marks": 5,
+              "text": "Design an NFA using Thompson’s construction for (a|b)*abb.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U1-Q012",
+              "marks": 5,
+              "text": "Classify errors and discuss errors in each phase of a compiler.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U1-Q013",
+              "marks": 5,
+              "text": "Construct an NFA for the regular expression (a|b)*a(a|b).",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            },
+            {
+              "id": "CD-U1-Q014",
+              "marks": 5,
+              "text": "Compare lexical analysis and syntax analysis with suitable examples.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            },
+            {
+              "id": "CD-U1-Q015",
+              "marks": 5,
+              "text": "Discuss the role of compiler-writing tools and describe different tools.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            }
+          ]
+        },
+        {
+          "unit": 2,
+          "questions": [
+            {
+              "id": "CD-U2-Q001",
+              "marks": 5,
+              "text": "Define syntax tree with a suitable example.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U2-Q002",
+              "marks": 5,
+              "text": "Explain the error-handling process in a syntax analyzer.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U2-Q003",
+              "marks": 10,
+              "text": "Construct FIRST and FOLLOW sets for the grammar: S → aBDh; B → cC; C → bc | ε; D → EF; E → g | ε; F → f | ε.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U2-Q004",
+              "marks": 10,
+              "text": "Construct an LL(1) parsing table and parse input acbdh$ for the grammar: S → aBh | Ce; B → cC; C → bd | ε.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U2-Q005",
+              "marks": 5,
+              "text": "Explain left factoring and left recursion.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U2-Q006",
+              "marks": 5,
+              "text": "Define YACC and outline the steps required to create an input/output translator using YACC.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U2-Q007",
+              "marks": 10,
+              "text": "Show that the grammar S → AaAb | BbBa; A → ε; B → ε is LL(1) but not SLR(1).",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U2-Q008",
+              "marks": 10,
+              "text": "Parse the input string aab using LR(0) for the grammar: S → AA; A → aA | b.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U2-Q009",
+              "marks": 5,
+              "text": "Construct a predictive parsing table for the grammar S → iEtSeS | iEtS | a; E → b.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U2-Q010",
+              "marks": 5,
+              "text": "Discuss operator-precedence parsing with an example.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U2-Q011",
+              "marks": 5,
+              "text": "Determine whether the grammar S → aSbS | bSaS | λ is ambiguous. Justify.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U2-Q012",
+              "marks": 5,
+              "text": "Draw the syntax tree and DAG for (a*b)+(c-d)*(a*b)+b.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U2-Q013",
+              "marks": 10,
+              "text": "Show that S → Aa | bAc | Bc | bBa; A → d; B → d is LR(1) but not LALR(1).",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U2-Q014",
+              "marks": 10,
+              "text": "Explain the properties and structure of an LR parser and techniques of LR parsing.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U2-Q015",
+              "marks": 10,
+              "text": "Explain LALR parsing and construct LR(1) items for S → CC; C → aC | d.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U2-Q016",
+              "marks": 5,
+              "text": "Construct an LR(1) parsing table for S → AA; A → aA | b.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            },
+            {
+              "id": "CD-U2-Q017",
+              "marks": 5,
+              "text": "Compare SLR, CLR and LALR parsers.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            },
+            {
+              "id": "CD-U2-Q018",
+              "marks": 5,
+              "text": "Explain operator-precedence grammar and compute the precedence table for E → E+T | T; T → T+F | F; F → (E) | id.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            },
+            {
+              "id": "CD-U2-Q019",
+              "marks": 5,
+              "text": "Discuss error detection and error recovery techniques in compiler design.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            },
+            {
+              "id": "CD-U2-Q020",
+              "marks": 10,
+              "text": "For S → AS | b; A → SA | a, construct the SLR parsing table and show parsing actions for input abab.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            },
+            {
+              "id": "CD-U2-Q021",
+              "marks": 10,
+              "text": "Explain stack implementation of shift-reduce parsing.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            },
+            {
+              "id": "CD-U2-Q022",
+              "marks": 10,
+              "text": "Define handle, handle pruning and left factoring with examples.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            },
+            {
+              "id": "CD-U2-Q023",
+              "marks": 10,
+              "text": "Explain top-down parsing and its problems with examples.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            }
+          ]
+        },
+        {
+          "unit": 3,
+          "questions": [
+            {
+              "id": "CD-U3-Q001",
+              "marks": 5,
+              "text": "Explain Syntax-Directed Definitions with a suitable example.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U3-Q002",
+              "marks": 5,
+              "text": "Explain L-attributed definitions with an example.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U3-Q003",
+              "marks": 10,
+              "text": "Discuss type checking in intermediate code generation.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U3-Q004",
+              "marks": 10,
+              "text": "Explain three-address code and control flow in intermediate code generation.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U3-Q005",
+              "marks": 5,
+              "text": "Write the translation procedure for control statements.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U3-Q006",
+              "marks": 5,
+              "text": "Differentiate between L-attributed and S-attributed definitions with an example.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U3-Q007",
+              "marks": 10,
+              "text": "Define quadruples, triples and indirect triples. Construct each representation for (a+b)*(c+d)-(a+b+c).",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U3-Q008",
+              "marks": 10,
+              "text": "Define syntax-directed translation. Construct an annotated parse tree for (4*7+1)*2 and explain how semantic actions attach to productions.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U3-Q009",
+              "marks": 10,
+              "text": "Construct quadruples, triples and indirect triples for -(a*b)+(c+d)-(a+b+c+d).",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U3-Q010",
+              "marks": 10,
+              "text": "Write short notes on abstract syntax tree, Polish notation, three-address code and backpatching.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U3-Q011",
+              "marks": 5,
+              "text": "What are the various storage management techniques in a symbol table?",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U3-Q012",
+              "marks": 5,
+              "text": "Define a symbol table and describe the procedure for storing names in it.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U3-Q013",
+              "marks": 5,
+              "text": "Explain infix-to-postfix translation using an SDT scheme with an example.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            },
+            {
+              "id": "CD-U3-Q014",
+              "marks": 5,
+              "text": "Write three-address code for s=(a*-b)+(-b*c) and represent it using quadruples and triples.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            },
+            {
+              "id": "CD-U3-Q015",
+              "marks": 5,
+              "text": "Define syntax-directed translation and construct an annotated parse tree for (4*7+1)*2.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            },
+            {
+              "id": "CD-U3-Q016",
+              "marks": 10,
+              "text": "Explain conversion of assignment statements and case statements into intermediate code with suitable examples.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            },
+            {
+              "id": "CD-U3-Q017",
+              "marks": 10,
+              "text": "What is intermediate code? Explain different intermediate code representations and their importance.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            },
+            {
+              "id": "CD-U3-Q018",
+              "marks": 10,
+              "text": "Explain backpatching and generate three-address code for the Boolean expression a < b or c > d and e < f.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            }
+          ]
+        },
+        {
+          "unit": 4,
+          "questions": [
+            {
+              "id": "CD-U4-Q001",
+              "marks": 5,
+              "text": "Write a short note on garbage collection.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U4-Q002",
+              "marks": 5,
+              "text": "Write a short note on heap management.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U4-Q003",
+              "marks": 10,
+              "text": "Explain issues in the design of a code generator with an example.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U4-Q004",
+              "marks": 10,
+              "text": "Discuss peephole optimization and its methods.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U4-Q005",
+              "marks": 5,
+              "text": "Explain an activation record and its contents with a diagram.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U4-Q006",
+              "marks": 5,
+              "text": "Define heap management and explain memory manager functions.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U4-Q007",
+              "marks": 10,
+              "text": "Explain garbage collection, performance metrics for garbage collector design, and reachability.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U4-Q008",
+              "marks": 10,
+              "text": "Explain DAG representation of basic blocks, code-improving transformations, and peephole optimization.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U4-Q009",
+              "marks": 5,
+              "text": "What is an activation record? Write its various fields.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U4-Q010",
+              "marks": 5,
+              "text": "What are basic blocks? Write an algorithm to partition code into basic blocks.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U4-Q011",
+              "marks": 10,
+              "text": "Compare static, stack and heap allocation, with merits and limitations.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U4-Q012",
+              "marks": 10,
+              "text": "For the code Prod=0; i=1; do { Prod=Prod+a[i]*b[i]; i=i+1; } while(i<=10); partition it into basic blocks and construct its flow graph.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U4-Q013",
+              "marks": 5,
+              "text": "Represent the code i=1; sum=0; while(i<=10) {sum+=i; i++;} as a flow graph.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            },
+            {
+              "id": "CD-U4-Q014",
+              "marks": 10,
+              "text": "Define a directed acyclic graph. Construct a DAG and instruction sequence for a+a*(b-c)+(b-c)*d.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            },
+            {
+              "id": "CD-U4-Q015",
+              "marks": 10,
+              "text": "Define symbol table and explain the data structures used for symbol tables.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            }
+          ]
+        },
+        {
+          "unit": 5,
+          "questions": [
+            {
+              "id": "CD-U5-Q001",
+              "marks": 5,
+              "text": "Differentiate between global and local optimization techniques.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U5-Q002",
+              "marks": 5,
+              "text": "Explain the importance of analyzing program control flow before applying optimization.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U5-Q003",
+              "marks": 10,
+              "text": "Discuss how loop structure influences optimization decisions in a compiler.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U5-Q004",
+              "marks": 10,
+              "text": "Explain the working of information flow in a program during optimization.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U5-Q005",
+              "marks": 5,
+              "text": "Write sources of redundancy and explain partially redundant expressions.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U5-Q006",
+              "marks": 5,
+              "text": "Describe the lazy code motion problem.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U5-Q007",
+              "marks": 10,
+              "text": "Explain what constitutes a loop in a flow graph and how loop optimization is performed in a compiler.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U5-Q008",
+              "marks": 10,
+              "text": "Describe data flow analysis and explain its use in code optimization.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-012"
+            },
+            {
+              "id": "CD-U5-Q009",
+              "marks": 5,
+              "text": "Explain control and data flow analysis with an example.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U5-Q010",
+              "marks": 10,
+              "text": "What is code optimization? Explain machine-dependent and machine-independent code optimization.",
+              "year": "2023-24",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST602"
+            },
+            {
+              "id": "CD-U5-Q011",
+              "marks": 5,
+              "text": "Explain the importance of loop optimization and explore loop optimization techniques with examples.",
+              "year": "2022-23",
+              "source": "PYQ",
+              "originalSubjectCode": "BCST 602"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subjectCode": "CST-015",
+      "subjectName": "Software Engineering",
+      "semester": 5,
+      "units": [
+        {
+          "unit": 1,
+          "questions": [
+            {
+              "id": "SE-2024-25-Q1-1",
+              "marks": 5,
+              "text": "Define software. Explain software characteristics.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2024-25-Q1-2",
+              "marks": 5,
+              "text": "Differentiate between traditional engineering and software engineering.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2024-25-Q1-3",
+              "marks": 10,
+              "text": "Discuss the Spiral Model for software development life cycle and highlight risk analysis in this context.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2024-25-Q1-4",
+              "marks": 10,
+              "text": "Explain the iterative enhancement model of SDLC with a diagram. What are its advantages over the conventional model?",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q1-1",
+              "marks": 5,
+              "text": "Define Software Engineering. Explain its characteristics.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q1-2",
+              "marks": 5,
+              "text": "Explain the term Software Crisis and its causes.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q1-3",
+              "marks": 10,
+              "text": "Explain the Software Development Life Cycle (SDLC) with a neat diagram.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q1-4",
+              "marks": 10,
+              "text": "Differentiate between Verification and Validation with suitable examples.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            }
+          ]
+        },
+        {
+          "unit": 2,
+          "questions": [
+            {
+              "id": "SE-2024-25-Q2-1",
+              "marks": 5,
+              "text": "Define SRS. Explain its significance in software development.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2024-25-Q2-2",
+              "marks": 5,
+              "text": "Explore the term Requirement Engineering.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2024-25-Q2-3",
+              "marks": 10,
+              "text": "Explain the difference between Structured and Object-Oriented Analysis.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2024-25-Q2-4",
+              "marks": 10,
+              "text": "List five desirable characteristics of a good SRS document. Discuss the relative advantages of formal and informal requirement specifications.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q2-1",
+              "marks": 5,
+              "text": "Explain the role of risk assessment in the Spiral Model.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q2-2",
+              "marks": 5,
+              "text": "Explain the Waterfall Model with its advantages and limitations.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q2-3",
+              "marks": 10,
+              "text": "Explain software requirements and the process of determining requirements for a software-based system.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q2-4",
+              "marks": 10,
+              "text": "Describe the Spiral Model. Explain how risk analysis is handled in this model.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            }
+          ]
+        },
+        {
+          "unit": 3,
+          "questions": [
+            {
+              "id": "SE-2024-25-Q3-1",
+              "marks": 5,
+              "text": "Explain the concept of modularization and its importance.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2024-25-Q3-2",
+              "marks": 5,
+              "text": "What is the difference between Verification and Validation? Explain their importance in software development.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2024-25-Q3-3",
+              "marks": 10,
+              "text": "Explain the characteristics of good design. Discuss merits and demerits of functional design.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2024-25-Q3-4",
+              "marks": 10,
+              "text": "What do you mean by cohesion? Explain various types of cohesion. Why is high cohesion best for good design? Justify.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q3-1",
+              "marks": 5,
+              "text": "Define Requirement Engineering and explain why requirement failures are costly.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q3-2",
+              "marks": 5,
+              "text": "Discuss the challenges in capturing non-functional requirements for real-time systems.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q3-3",
+              "marks": 10,
+              "text": "Describe various requirement elicitation techniques used in software development.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q3-4",
+              "marks": 10,
+              "text": "Explain the process of Requirement Engineering with suitable examples.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            }
+          ]
+        },
+        {
+          "unit": 4,
+          "questions": [
+            {
+              "id": "SE-2024-25-Q4-1",
+              "marks": 5,
+              "text": "Elaborate alpha and beta testing with their differences.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2024-25-Q4-2",
+              "marks": 5,
+              "text": "Explain boundary value analysis and its significance.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2024-25-Q4-3",
+              "marks": 10,
+              "text": "Explain testing and its levels. How will you perform unit testing? Explain the role of driver and stub modules in unit testing.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2024-25-Q4-4",
+              "marks": 10,
+              "text": "What is functional testing? How does functional testing differ from structural testing? Explain black-box testing with an example.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q4-1",
+              "marks": 5,
+              "text": "Discuss the importance of architectural design decisions in long-term software evolution.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q4-2",
+              "marks": 5,
+              "text": "Why is low coupling and high cohesion difficult to achieve simultaneously?",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q4-3",
+              "marks": 10,
+              "text": "Explain different architectural styles (Layered, Client-Server, Microservices) and evaluate their suitability for enterprise systems.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q4-4",
+              "marks": 10,
+              "text": "Compare structured design and object-oriented design with respect to complexity management, reusability, and real-world modeling.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            }
+          ]
+        },
+        {
+          "unit": 5,
+          "questions": [
+            {
+              "id": "SE-2024-25-Q5-1",
+              "marks": 5,
+              "text": "Write short notes on change control process and software version control.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2024-25-Q5-2",
+              "marks": 5,
+              "text": "Explain CASE tools and their characteristics.",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2024-25-Q5-3",
+              "marks": 10,
+              "text": "Define LOC metric. What are the issues in measuring software size using LOC as a metric?",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2024-25-Q5-4",
+              "marks": 10,
+              "text": "What do you mean by re-engineering? How does it differ from reverse engineering?",
+              "year": "2024-25",
+              "source": "PYQ",
+              "originalSubjectCode": "CST015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q5-1",
+              "marks": 5,
+              "text": "Why is testing insufficient to guarantee software correctness?",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q5-2",
+              "marks": 5,
+              "text": "Explain unit testing and integration testing.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q5-3",
+              "marks": 10,
+              "text": "Describe black-box testing and white-box testing techniques with examples.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            },
+            {
+              "id": "SE-2025-26-Q5-4",
+              "marks": 10,
+              "text": "Explain software project management and discuss the role of a project manager.",
+              "year": "2025-26",
+              "source": "PYQ",
+              "originalSubjectCode": "CST-015",
+              "unitMapping": "provisional-paper-question-number"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

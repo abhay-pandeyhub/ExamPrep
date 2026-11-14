@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Mock Test | ExamPrep</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h2>ExamPrep</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="exam-options.html">Exam Options</a>
+        </nav>
+    </header>
+
+    <main class="mcq-test">
+
+        <h1>MCQ Mock Test</h1>
+        <p class="mcq-subtitle">
+            Test your knowledge with a timed multiple-choice quiz.
+        </p>
+
+        <!-- Test Information -->
+        <div class="mcq-info">
+            <h2 id="mcqSubject">Subject Name</h2>
+
+            <div class="mcq-status">
+                <span id="questionCounter">Question 1 of 20</span>
+                <span id="timer">Time Left: 20:00</span>
+            </div>
+        </div>
+
+        <!-- Question Area -->
+        <div id="mcqQuestionBox" class="mcq-question-box" hidden>
+
+            <h3 id="mcqQuestion">
+                Question will appear here.
+            </h3>
+
+            <div id="mcqOptions" class="mcq-options">
+                <!-- Options added using JavaScript -->
+            </div>
+
+            <div class="mcq-navigation">
+                <button id="previousBtn" disabled>
+                    Previous
+                </button>
+
+                <button id="nextBtn">
+                    Next
+                </button>
+
+                <button id="submitBtn">
+                    Submit Test
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Start Test -->
+        <div id="mcqStartBox" class="mcq-start-box">
+            <h2>Ready to Start?</h2>
+            <p>
+                You will have 20 minutes to complete
+                20 multiple-choice questions.
+            </p>
+
+            <button id="startMcqBtn">
+                Start Test
+            </button>
+        </div>
+
+        <!-- Result Area -->
+        <div id="mcqResultBox" class="mcq-result-box" hidden>
+
+            <h2>Test Result</h2>
+
+            <h1 id="mcqScore">0 / 20</h1>
+
+            <p id="mcqPercentage">Percentage: 0%</p>
+
+            <p id="mcqCorrect">Correct Answers: 0</p>
+
+            <p id="mcqIncorrect">Incorrect Answers: 0</p>
+
+            <p id="mcqUnattempted">Unattempted: 0</p>
+
+            <button id="retryMcqBtn">
+                Try Again
+            </button>
+
+            <a href="dashboard.html">
+                <button type="button">
+                    Back to Dashboard
+                </button>
+            </a>
+
+        </div>
+
+        <p id="mcqMessage" role="status"></p>
+
+    </main>
+
+    <script src="js/mcq-test.js"></script>
+
+</body>
+</html>

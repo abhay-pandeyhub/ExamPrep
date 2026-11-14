@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Written Mock Test | ExamPrep</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <h2>ExamPrep</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="exam-options.html">Exam Options</a>
+        </nav>
+    </header>
+
+    <main class="written-test">
+
+        <h1>Written Mock Test</h1>
+
+        <p class="written-subtitle">
+            Generate a practice question paper based on the
+            UTU examination pattern.
+        </p>
+
+        <!-- Control Buttons -->
+        <div class="written-controls">
+            <button id="generateBtn">
+                Generate Paper
+            </button>
+
+            <button id="regenerateBtn" disabled>
+                Generate Again
+            </button>
+
+            <button id="printBtn" disabled>
+                Print / Save PDF
+            </button>
+        </div>
+
+        <p id="paperMessage" role="status"></p>
+
+        <!-- Question Paper -->
+        <div id="questionPaper" class="question-paper" hidden>
+
+            <!-- Paper Header -->
+            <div class="paper-heading">
+
+                <div class="paper-top-row">
+                    <strong id="paperSubjectCode">
+                        Sub Code: CST-011
+                    </strong>
+
+                    <strong>
+                        Roll No: ______________
+                    </strong>
+                </div>
+
+                <h2>EXAMPREP – WRITTEN MOCK TEST</h2>
+
+                <h3>
+                    B.Tech. – Computer Science &amp; Engineering
+                </h3>
+
+                <h3 id="paperSubject">
+                    Subject Name
+                </h3>
+
+                <p id="paperSemester">
+                    Semester
+                </p>
+
+                <div class="paper-info">
+                    <strong>Duration: 3:00 hrs</strong>
+                    <strong>Max Marks: 100</strong>
+                </div>
+
+                <p class="paper-instructions">
+                    <strong>
+                        Note: Attempt any TWO parts from each
+                        question (Q1–Q5). Each question carries
+                        20 marks. Part (a) contains two
+                        subparts of 5 marks each, while parts
+                        (b) and (c) carry 10 marks each.
+                    </strong>
+                </p>
+
+            </div>
+
+            <!-- Questions Q1 to Q5 -->
+            <div id="paperSections" class="paper-question-table">
+            </div>
+
+            <!-- Paper Footer -->
+            <div class="paper-footer">
+                <p>********** END OF QUESTION PAPER **********</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/written-test.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,2628 @@
+{
+  "subjects": [
+    {
+      "subjectCode": "CST-011",
+      "subjectName": "Database Management System",
+      "questions": [
+        {
+          "id": "CST-011-MCQ-001",
+          "unit": 1,
+          "question": "What does DBMS stand for?",
+          "options": [
+            "Database Machine Software",
+            "Data Backup Management Service",
+            "Database Management System",
+            "Digital Base Mapping System"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-002",
+          "unit": 1,
+          "question": "Which key uniquely identifies a row in a table?",
+          "options": [
+            "Foreign key",
+            "Primary key",
+            "Sort key",
+            "Partial key"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-003",
+          "unit": 1,
+          "question": "Which SQL statement retrieves rows?",
+          "options": [
+            "INSERT",
+            "SELECT",
+            "DROP",
+            "ALTER"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-004",
+          "unit": 1,
+          "question": "Which command creates a new table?",
+          "options": [
+            "UPDATE",
+            "SELECT",
+            "DELETE",
+            "CREATE TABLE"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-005",
+          "unit": 1,
+          "question": "Which ACID property means all-or-nothing execution?",
+          "options": [
+            "Atomicity",
+            "Isolation",
+            "Durability",
+            "Consistency"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-006",
+          "unit": 1,
+          "question": "Which normal form eliminates partial dependency on a candidate key?",
+          "options": [
+            "Second normal form",
+            "Fourth normal form",
+            "First normal form",
+            "Third normal form"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-007",
+          "unit": 1,
+          "question": "Which clause filters rows before grouping?",
+          "options": [
+            "HAVING",
+            "WHERE",
+            "ORDER BY",
+            "GROUP BY"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-008",
+          "unit": 1,
+          "question": "Which SQL aggregate returns the number of rows?",
+          "options": [
+            "MIN",
+            "AVG",
+            "COUNT",
+            "SUM"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-009",
+          "unit": 1,
+          "question": "What does a foreign key enforce?",
+          "options": [
+            "Sorting order",
+            "Data encryption",
+            "Physical data independence",
+            "Referential integrity"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-010",
+          "unit": 1,
+          "question": "Which join returns only matching rows?",
+          "options": [
+            "INNER JOIN",
+            "FULL OUTER JOIN",
+            "LEFT JOIN",
+            "CROSS JOIN"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-011",
+          "unit": 2,
+          "question": "Which SQL clause sorts output?",
+          "options": [
+            "HAVING",
+            "ORDER BY",
+            "WHERE",
+            "GROUP BY"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-012",
+          "unit": 2,
+          "question": "Which ACID property preserves committed changes after a crash?",
+          "options": [
+            "Consistency",
+            "Atomicity",
+            "Durability",
+            "Isolation"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-013",
+          "unit": 2,
+          "question": "Which SQL statement modifies existing rows?",
+          "options": [
+            "INSERT",
+            "UPDATE",
+            "GRANT",
+            "CREATE"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-014",
+          "unit": 2,
+          "question": "Which normal form addresses transitive dependencies of non-prime attributes?",
+          "options": [
+            "First normal form",
+            "Second normal form",
+            "Fourth normal form",
+            "Third normal form"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-015",
+          "unit": 2,
+          "question": "Which SQL operator matches patterns using wildcards?",
+          "options": [
+            "BETWEEN",
+            "EXISTS",
+            "IN",
+            "LIKE"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-016",
+          "unit": 2,
+          "question": "Which command removes a table definition?",
+          "options": [
+            "DELETE FROM",
+            "UPDATE",
+            "DROP TABLE",
+            "TRUNCATE TABLE"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-017",
+          "unit": 2,
+          "question": "Which data model organizes data as relations?",
+          "options": [
+            "Network model",
+            "Relational model",
+            "Hierarchical model",
+            "Object graph model"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-018",
+          "unit": 2,
+          "question": "What is a candidate key?",
+          "options": [
+            "A duplicate column",
+            "A minimal superkey",
+            "Any foreign key",
+            "A nonunique index"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-019",
+          "unit": 2,
+          "question": "What is a superkey?",
+          "options": [
+            "A key with null values",
+            "A table constraint on ordering",
+            "An attribute set that uniquely identifies tuples",
+            "Only a primary key"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-020",
+          "unit": 2,
+          "question": "Which constraint prevents NULL values?",
+          "options": [
+            "UNIQUE",
+            "DEFAULT",
+            "NOT NULL",
+            "CHECK"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-021",
+          "unit": 3,
+          "question": "Which command adds rows to a table?",
+          "options": [
+            "DROP",
+            "INSERT",
+            "UPDATE",
+            "ALTER"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-022",
+          "unit": 3,
+          "question": "Which clause filters grouped results?",
+          "options": [
+            "ORDER BY",
+            "LIMIT",
+            "WHERE",
+            "HAVING"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-023",
+          "unit": 3,
+          "question": "What does COMMIT do?",
+          "options": [
+            "Makes a transaction's changes permanent",
+            "Creates a savepoint",
+            "Undoes a transaction",
+            "Deletes a database"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-024",
+          "unit": 3,
+          "question": "What does ROLLBACK do?",
+          "options": [
+            "Undoes uncommitted changes",
+            "Saves changes permanently",
+            "Creates an index",
+            "Locks every table"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-025",
+          "unit": 3,
+          "question": "Which anomaly is caused by duplicated data during modification?",
+          "options": [
+            "Compilation anomaly",
+            "Update anomaly",
+            "Network anomaly",
+            "Parsing anomaly"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-026",
+          "unit": 3,
+          "question": "Which SQL operation combines rows from two tables by matching columns?",
+          "options": [
+            "EXCEPT",
+            "UNION",
+            "INTERSECT",
+            "JOIN"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-027",
+          "unit": 3,
+          "question": "Which relational algebra operator selects rows?",
+          "options": [
+            "Selection",
+            "Projection",
+            "Rename",
+            "Cartesian product"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-028",
+          "unit": 3,
+          "question": "Which relational algebra operator selects columns?",
+          "options": [
+            "Union",
+            "Selection",
+            "Difference",
+            "Projection"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-029",
+          "unit": 3,
+          "question": "Which SQL keyword removes duplicate result rows?",
+          "options": [
+            "PRIMARY",
+            "ONLY",
+            "DISTINCT",
+            "UNIQUEKEY"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-030",
+          "unit": 3,
+          "question": "What does a view normally store?",
+          "options": [
+            "A full database backup",
+            "A query definition",
+            "Only index pages",
+            "A transaction log"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-031",
+          "unit": 4,
+          "question": "Which index structure is commonly used for range queries?",
+          "options": [
+            "B+ tree",
+            "Queue",
+            "Hash chain only",
+            "Stack"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-032",
+          "unit": 4,
+          "question": "Which indexing method is particularly suited to equality lookups?",
+          "options": [
+            "Tree traversal without keys",
+            "Bubble sorting",
+            "Hash indexing",
+            "Sequential scanning"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-033",
+          "unit": 4,
+          "question": "What is a deadlock?",
+          "options": [
+            "A successful rollback",
+            "Transactions waiting cyclically for one another",
+            "A completed transaction",
+            "An empty table"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-034",
+          "unit": 4,
+          "question": "What is serializability?",
+          "options": [
+            "Removing all conflicts",
+            "Execution of one SQL statement only",
+            "Equivalence to a serial transaction schedule",
+            "Permanent locking of a database"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-035",
+          "unit": 4,
+          "question": "Which isolation problem reads uncommitted data?",
+          "options": [
+            "Checkpoint",
+            "Index scan",
+            "Phantom-free read",
+            "Dirty read"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-036",
+          "unit": 4,
+          "question": "What is a phantom read?",
+          "options": [
+            "Reading a NULL column",
+            "A repeated predicate query returns a changed row set",
+            "Reading a duplicate key",
+            "A missing index"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-037",
+          "unit": 4,
+          "question": "Which lock allows concurrent reads but prevents conflicting writes?",
+          "options": [
+            "Exclusive lock",
+            "Update statement",
+            "Shared lock",
+            "Schema drop lock"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-038",
+          "unit": 4,
+          "question": "What does two-phase locking require?",
+          "options": [
+            "Two commits per transaction",
+            "Two database servers",
+            "A growing lock phase followed by a shrinking phase",
+            "Two indexes per table"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-039",
+          "unit": 4,
+          "question": "Which recovery record supports redo and undo?",
+          "options": [
+            "Transaction log",
+            "Schema diagram",
+            "Data dictionary only",
+            "Query result"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-040",
+          "unit": 4,
+          "question": "What is a checkpoint used for?",
+          "options": [
+            "Deleting all logs",
+            "Sorting query results",
+            "Enforcing unique keys",
+            "Reducing recovery work after failure"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-041",
+          "unit": 5,
+          "question": "Which schema level describes physical storage?",
+          "options": [
+            "Internal level",
+            "Conceptual level",
+            "External level",
+            "User view level"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-042",
+          "unit": 5,
+          "question": "Which schema level represents the overall logical database?",
+          "options": [
+            "Internal level",
+            "Conceptual level",
+            "Device level",
+            "External level"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-043",
+          "unit": 5,
+          "question": "What is physical data independence?",
+          "options": [
+            "Removing all constraints",
+            "Changing storage without changing the conceptual schema",
+            "Renaming every relation",
+            "Changing user passwords"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-044",
+          "unit": 5,
+          "question": "What is logical data independence?",
+          "options": [
+            "Changing disk blocks only",
+            "Changing conceptual schema without changing external views",
+            "Replacing a query optimizer",
+            "Restarting a server"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-045",
+          "unit": 5,
+          "question": "Which SQL clause groups rows for aggregation?",
+          "options": [
+            "ORDER BY",
+            "DISTINCT",
+            "GROUP BY",
+            "WHERE"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-046",
+          "unit": 5,
+          "question": "What does COUNT(column) ignore?",
+          "options": [
+            "Negative values",
+            "Zero values",
+            "NULL values",
+            "Repeated values"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-047",
+          "unit": 5,
+          "question": "Which constraint checks a Boolean condition on rows?",
+          "options": [
+            "CHECK",
+            "DEFAULT",
+            "VIEW",
+            "INDEX"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-048",
+          "unit": 5,
+          "question": "Which normal form requires every determinant to be a superkey?",
+          "options": [
+            "1NF",
+            "BCNF",
+            "2NF",
+            "3NF"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-049",
+          "unit": 5,
+          "question": "What is a composite key?",
+          "options": [
+            "An automatically generated index",
+            "A key stored in another database",
+            "A key formed from multiple attributes",
+            "A key that can be NULL"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-011-MCQ-050",
+          "unit": 5,
+          "question": "What does a CROSS JOIN produce?",
+          "options": [
+            "Only matching rows",
+            "Cartesian product",
+            "Only unmatched rows",
+            "A sorted union"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        }
+      ]
+    },
+    {
+      "subjectCode": "CST-010",
+      "subjectName": "Design and Analysis of Algorithms",
+      "questions": [
+        {
+          "id": "CST-010-MCQ-001",
+          "unit": 1,
+          "question": "What is the worst-case time complexity of binary search on a sorted array?",
+          "options": [
+            "O(1)",
+            "O(n)",
+            "O(log n)",
+            "O(n log n)"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-002",
+          "unit": 1,
+          "question": "Which asymptotic notation gives an upper bound?",
+          "options": [
+            "Big Omega",
+            "Little omega",
+            "Big O",
+            "Big Theta"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-003",
+          "unit": 1,
+          "question": "Which asymptotic notation gives a lower bound?",
+          "options": [
+            "Big Theta",
+            "Big O",
+            "Big Omega",
+            "Little o"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-004",
+          "unit": 1,
+          "question": "Which notation gives a tight asymptotic bound?",
+          "options": [
+            "Little o",
+            "Big O only",
+            "Big Theta",
+            "Big Omega only"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-005",
+          "unit": 1,
+          "question": "What is the worst-case time complexity of merge sort?",
+          "options": [
+            "O(log n)",
+            "O(n squared)",
+            "O(n log n)",
+            "O(n cubed)"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-006",
+          "unit": 1,
+          "question": "What is the worst-case time complexity of quicksort?",
+          "options": [
+            "O(n squared)",
+            "O(log n)",
+            "O(n log n)",
+            "O(n)"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-007",
+          "unit": 1,
+          "question": "Which sorting algorithm uses a heap data structure?",
+          "options": [
+            "Selection sort",
+            "Insertion sort",
+            "Heap sort",
+            "Bubble sort"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-008",
+          "unit": 1,
+          "question": "Which sort is stable in its standard merge-based implementation?",
+          "options": [
+            "Selection sort",
+            "Heap sort",
+            "Merge sort",
+            "Quicksort in place"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-009",
+          "unit": 1,
+          "question": "Which algorithm repeatedly selects the smallest remaining element?",
+          "options": [
+            "Radix sort",
+            "Selection sort",
+            "Merge sort",
+            "Counting sort"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-010",
+          "unit": 1,
+          "question": "Which sort has O(n) best-case time with an early-exit optimization?",
+          "options": [
+            "Selection sort",
+            "Merge sort",
+            "Bubble sort",
+            "Heap sort"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-011",
+          "unit": 2,
+          "question": "What is the recurrence for binary search?",
+          "options": [
+            "T(n)=T(n-1)+O(n)",
+            "T(n)=3T(n/2)+O(1)",
+            "T(n)=2T(n/2)+O(n)",
+            "T(n)=T(n/2)+O(1)"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-012",
+          "unit": 2,
+          "question": "Which technique divides a problem into subproblems and combines results?",
+          "options": [
+            "Branch and bound only",
+            "Backtracking only",
+            "Brute force only",
+            "Divide and conquer"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-013",
+          "unit": 2,
+          "question": "Which algorithm finds a minimum spanning tree by growing one tree?",
+          "options": [
+            "Prim's algorithm",
+            "Bellman-Ford",
+            "Dijkstra's algorithm",
+            "Floyd-Warshall"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-014",
+          "unit": 2,
+          "question": "Which algorithm finds an MST by considering edges in increasing weight order?",
+          "options": [
+            "Warshall's algorithm",
+            "Kruskal's algorithm",
+            "Dijkstra's algorithm",
+            "DFS"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-015",
+          "unit": 2,
+          "question": "Which data structure efficiently supports Kruskal's cycle checks?",
+          "options": [
+            "Stack",
+            "Simple queue",
+            "Hash map of strings",
+            "Disjoint-set union"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-016",
+          "unit": 2,
+          "question": "Which shortest-path algorithm requires nonnegative edge weights?",
+          "options": [
+            "Bellman-Ford",
+            "Dijkstra's algorithm",
+            "Topological sorting",
+            "Floyd-Warshall"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-017",
+          "unit": 2,
+          "question": "Which algorithm handles negative edges but detects reachable negative cycles?",
+          "options": [
+            "Prim",
+            "Bellman-Ford",
+            "Kruskal",
+            "Dijkstra"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-018",
+          "unit": 2,
+          "question": "Which algorithm computes all-pairs shortest paths using dynamic programming?",
+          "options": [
+            "Floyd-Warshall",
+            "KMP",
+            "Merge sort",
+            "Binary search"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-019",
+          "unit": 2,
+          "question": "What is the time complexity of Floyd-Warshall for n vertices?",
+          "options": [
+            "O(log n)",
+            "O(n log n)",
+            "O(n cubed)",
+            "O(n squared)"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-020",
+          "unit": 2,
+          "question": "Which graph traversal uses a queue?",
+          "options": [
+            "Topological DFS",
+            "Breadth-first search",
+            "Depth-first search",
+            "Recursive backtracking"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-021",
+          "unit": 3,
+          "question": "Which graph traversal typically uses a stack or recursion?",
+          "options": [
+            "Dijkstra",
+            "Breadth-first search",
+            "Depth-first search",
+            "Level-order traversal"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-022",
+          "unit": 3,
+          "question": "Which problem can be solved using topological sorting?",
+          "options": [
+            "Detecting prime numbers",
+            "Sorting cyclic dependencies",
+            "Scheduling tasks in a DAG",
+            "Finding MST in any graph"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-023",
+          "unit": 3,
+          "question": "Which data structure is used in the standard BFS implementation?",
+          "options": [
+            "Heap only",
+            "Queue",
+            "Binary search tree",
+            "Stack"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-024",
+          "unit": 3,
+          "question": "Which problem is classically solved using dynamic programming?",
+          "options": [
+            "Unrestricted comparison sorting",
+            "Binary search",
+            "Linear scanning",
+            "0/1 knapsack"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-025",
+          "unit": 3,
+          "question": "Which method is optimal for fractional knapsack?",
+          "options": [
+            "DFS over subsets",
+            "Bellman-Ford",
+            "Greedy by weight only",
+            "Greedy by value-to-weight ratio"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-026",
+          "unit": 3,
+          "question": "Why does the greedy ratio method not always solve 0/1 knapsack?",
+          "options": [
+            "Values are all equal",
+            "Sorting is forbidden",
+            "Weights must be negative",
+            "Items cannot be divided"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-027",
+          "unit": 3,
+          "question": "What does optimal substructure mean?",
+          "options": [
+            "All inputs are sorted",
+            "Every algorithm is greedy",
+            "Optimal solutions contain optimal subproblem solutions",
+            "All subproblems are independent"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-028",
+          "unit": 3,
+          "question": "What does overlapping subproblems mean?",
+          "options": [
+            "Only one recursion call exists",
+            "Every subproblem is unique",
+            "The same subproblems recur",
+            "There are no base cases"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-029",
+          "unit": 3,
+          "question": "Which technique stores results of recursive subproblems?",
+          "options": [
+            "Partitioning",
+            "Memoization",
+            "Backtracking",
+            "Randomization"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-030",
+          "unit": 3,
+          "question": "Which technique fills a DP table iteratively?",
+          "options": [
+            "Memoization only",
+            "Tabulation",
+            "Greedy selection",
+            "Depth-first search"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-031",
+          "unit": 4,
+          "question": "What is the purpose of backtracking?",
+          "options": [
+            "Sort all data first",
+            "Explore choices and undo invalid partial solutions",
+            "Avoid recursion completely",
+            "Always choose local optimum"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-032",
+          "unit": 4,
+          "question": "Which classic problem is solved using backtracking?",
+          "options": [
+            "N-Queens",
+            "Binary search",
+            "Merge sort",
+            "Dijkstra"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-033",
+          "unit": 4,
+          "question": "Which algorithm is commonly used for string pattern matching in linear time?",
+          "options": [
+            "KMP",
+            "Floyd-Warshall",
+            "Bubble sort",
+            "Prim"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-034",
+          "unit": 4,
+          "question": "What is the purpose of KMP's prefix function or LPS array?",
+          "options": [
+            "Build an MST",
+            "Sort characters",
+            "Compress a graph",
+            "Avoid rechecking matched prefixes"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-035",
+          "unit": 4,
+          "question": "Which problem seeks a tour visiting every city once and returning to start?",
+          "options": [
+            "Minimum cut",
+            "Shortest path tree",
+            "Travelling Salesperson Problem",
+            "Topological sort"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-036",
+          "unit": 4,
+          "question": "Which complexity class contains problems verifiable in polynomial time?",
+          "options": [
+            "EXPTIME only",
+            "NP",
+            "P only",
+            "LOGSPACE only"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-037",
+          "unit": 4,
+          "question": "What does NP-complete mean?",
+          "options": [
+            "Undecidable by definition",
+            "Only NP-hard",
+            "Only in P",
+            "In NP and NP-hard"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-038",
+          "unit": 4,
+          "question": "What does NP-hard mean?",
+          "options": [
+            "Always solvable in polynomial time",
+            "Always belongs to NP",
+            "At least as hard as every problem in NP under polynomial reductions",
+            "Cannot be approximated"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-039",
+          "unit": 4,
+          "question": "Which recurrence is typical of merge sort?",
+          "options": [
+            "T(n)=3T(n/2)+O(n squared)",
+            "T(n)=2T(n/2)+O(n)",
+            "T(n)=T(n-1)+O(1)",
+            "T(n)=T(n/2)+O(1)"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-040",
+          "unit": 4,
+          "question": "What is the worst-case comparison count order for insertion sort?",
+          "options": [
+            "O(n log n)",
+            "O(log n)",
+            "O(1)",
+            "O(n squared)"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-041",
+          "unit": 5,
+          "question": "What is the time complexity of building a binary heap bottom-up?",
+          "options": [
+            "O(log n)",
+            "O(n)",
+            "O(n log n)",
+            "O(n squared)"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-042",
+          "unit": 5,
+          "question": "What is the time complexity of one heap extract-min operation?",
+          "options": [
+            "O(n log n)",
+            "O(n squared)",
+            "O(1)",
+            "O(log n)"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-043",
+          "unit": 5,
+          "question": "Which algorithm is an example of greedy design?",
+          "options": [
+            "Huffman coding",
+            "0/1 knapsack DP",
+            "Floyd-Warshall",
+            "N-Queens backtracking"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-044",
+          "unit": 5,
+          "question": "What is the objective of Huffman coding?",
+          "options": [
+            "Sort symbols alphabetically",
+            "Minimize weighted average codeword length",
+            "Find shortest graph path",
+            "Encrypt messages"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-045",
+          "unit": 5,
+          "question": "Which data structure is commonly used to implement Huffman coding?",
+          "options": [
+            "Disjoint-set union",
+            "Stack only",
+            "Min-priority queue",
+            "Adjacency matrix only"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-046",
+          "unit": 5,
+          "question": "What is a spanning tree of a connected graph?",
+          "options": [
+            "A disconnected forest",
+            "A path containing every edge",
+            "An acyclic connected subgraph containing all vertices",
+            "A cycle through all vertices"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-047",
+          "unit": 5,
+          "question": "How many edges does a spanning tree with n vertices have?",
+          "options": [
+            "n+1",
+            "n-1",
+            "n",
+            "2n"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-048",
+          "unit": 5,
+          "question": "What is the worst-case complexity of linear search on n items?",
+          "options": [
+            "O(n log n)",
+            "O(n)",
+            "O(1)",
+            "O(log n)"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-049",
+          "unit": 5,
+          "question": "Which algorithmic technique explores a search tree using bounds to prune?",
+          "options": [
+            "Counting sort",
+            "Merge sort",
+            "Binary search",
+            "Branch and bound"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-010-MCQ-050",
+          "unit": 5,
+          "question": "Which condition must hold for standard binary search?",
+          "options": [
+            "Input must be sorted",
+            "Input must be a graph",
+            "Input must be a linked list",
+            "Input must contain unique values"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        }
+      ]
+    },
+    {
+      "subjectCode": "CST-012",
+      "subjectName": "Compiler Design",
+      "questions": [
+        {
+          "id": "CST-012-MCQ-001",
+          "unit": 1,
+          "question": "Which compiler phase converts source characters into tokens?",
+          "options": [
+            "Code generation",
+            "Optimization",
+            "Lexical analysis",
+            "Linking"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-002",
+          "unit": 1,
+          "question": "What is the output of a lexical analyzer?",
+          "options": [
+            "Executable file",
+            "Tokens",
+            "Machine instructions",
+            "Parse tree only"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-003",
+          "unit": 1,
+          "question": "Which tool commonly generates lexical analyzers?",
+          "options": [
+            "Lex/Flex",
+            "Yacc/Bison",
+            "GDB",
+            "Make"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-004",
+          "unit": 1,
+          "question": "Which tool commonly generates parsers?",
+          "options": [
+            "Assembler",
+            "Yacc/Bison",
+            "Git",
+            "Lex/Flex"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-005",
+          "unit": 1,
+          "question": "What does a parser check?",
+          "options": [
+            "Runtime speed",
+            "File permissions",
+            "Syntactic structure",
+            "Disk space"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-006",
+          "unit": 1,
+          "question": "Which grammar type is commonly used to describe programming-language syntax?",
+          "options": [
+            "Regular expression only",
+            "Unrestricted grammar only",
+            "Context-sensitive grammar only",
+            "Context-free grammar"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-007",
+          "unit": 1,
+          "question": "Which parsing approach builds a parse tree from root to leaves?",
+          "options": [
+            "Bottom-up parsing",
+            "Top-down parsing",
+            "Shift-reduce parsing",
+            "Operator-precedence parsing"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-008",
+          "unit": 1,
+          "question": "Which parsing approach reduces input to the start symbol?",
+          "options": [
+            "Recursive-descent parsing",
+            "Bottom-up parsing",
+            "LL(1) parsing",
+            "Predictive parsing"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-009",
+          "unit": 1,
+          "question": "What does LL(1) mean?",
+          "options": [
+            "Left-to-right scan, two lookaheads",
+            "Left-to-right scan, rightmost derivation, one lookahead",
+            "Left-to-right scan, leftmost derivation, one lookahead",
+            "Right-to-left scan, leftmost derivation"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-010",
+          "unit": 1,
+          "question": "What does LR parsing construct in reverse?",
+          "options": [
+            "Rightmost derivation",
+            "Abstract syntax tree only",
+            "Regular expression",
+            "Leftmost derivation"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-011",
+          "unit": 2,
+          "question": "Which parser family includes SLR, CLR, and LALR?",
+          "options": [
+            "LL parsers",
+            "Finite automata",
+            "Recursive descent only",
+            "LR parsers"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-012",
+          "unit": 2,
+          "question": "Which parsing action pushes an input symbol onto the stack?",
+          "options": [
+            "Accept",
+            "Shift",
+            "Reduce",
+            "Goto"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-013",
+          "unit": 2,
+          "question": "Which parsing action replaces a handle with its nonterminal?",
+          "options": [
+            "Shift",
+            "Accept",
+            "Reduce",
+            "Scan"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-014",
+          "unit": 2,
+          "question": "What is a handle in bottom-up parsing?",
+          "options": [
+            "Any identifier",
+            "The start symbol only",
+            "A substring matching a production RHS for a reverse rightmost derivation step",
+            "An input delimiter"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-015",
+          "unit": 2,
+          "question": "Which grammar property causes multiple parse trees for one string?",
+          "options": [
+            "Tokenization",
+            "Ambiguity",
+            "Type checking",
+            "Left factoring"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-016",
+          "unit": 2,
+          "question": "What does left recursion often cause in naive recursive-descent parsers?",
+          "options": [
+            "Infinite recursion",
+            "A finite automaton",
+            "Automatic optimization",
+            "Faster scanning"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-017",
+          "unit": 2,
+          "question": "Why is left factoring performed?",
+          "options": [
+            "To generate machine code",
+            "To calculate liveness",
+            "To remove all terminals",
+            "To defer a choice when productions share a prefix"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-018",
+          "unit": 2,
+          "question": "What does FIRST(X) contain?",
+          "options": [
+            "Terminals that can begin strings derived from X",
+            "Only end markers",
+            "All symbols after X",
+            "Only nonterminals"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-019",
+          "unit": 2,
+          "question": "What does FOLLOW(A) contain?",
+          "options": [
+            "Only epsilon",
+            "Terminals that begin A",
+            "Terminals that may appear immediately after A in a sentential form",
+            "All productions of A"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-020",
+          "unit": 2,
+          "question": "Which symbol denotes an empty string in grammar rules?",
+          "options": [
+            "Dollar sign",
+            "Asterisk",
+            "Epsilon",
+            "Hash sign"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-021",
+          "unit": 3,
+          "question": "What is syntax-directed translation?",
+          "options": [
+            "Only lexical tokenization",
+            "Translation guided by grammar productions and semantic rules",
+            "Only whitespace removal",
+            "Only machine-code linking"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-022",
+          "unit": 3,
+          "question": "What is an attribute grammar?",
+          "options": [
+            "A database schema",
+            "A machine-code optimizer",
+            "A finite automaton with no rules",
+            "A CFG with attributes and semantic rules"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-023",
+          "unit": 3,
+          "question": "Which attribute is computed from child nodes in a parse tree?",
+          "options": [
+            "Token class",
+            "Inherited attribute",
+            "Synthesized attribute",
+            "Stack pointer"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-024",
+          "unit": 3,
+          "question": "Which intermediate representation uses at most three addresses per instruction?",
+          "options": [
+            "Assembly directive",
+            "Regular expression",
+            "Three-address code",
+            "Bytecode header"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-025",
+          "unit": 3,
+          "question": "Which structure stores operator and up to two operands plus result?",
+          "options": [
+            "Symbol table",
+            "Quadruple",
+            "Parse forest",
+            "Token stream"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-026",
+          "unit": 3,
+          "question": "Which representation often stores operator and operands in three fields?",
+          "options": [
+            "Quadruple",
+            "Triple",
+            "Basic block",
+            "Activation record"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-027",
+          "unit": 3,
+          "question": "What is a basic block?",
+          "options": [
+            "A straight-line code sequence with one entry and one exit",
+            "An entire source file",
+            "A lexical token",
+            "A loop with many entries"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-028",
+          "unit": 3,
+          "question": "What does a control-flow graph represent?",
+          "options": [
+            "Grammar productions",
+            "Symbol names only",
+            "Possible transfers of control between basic blocks",
+            "Token categories"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-029",
+          "unit": 3,
+          "question": "Which graph is useful for common subexpression elimination within a block?",
+          "options": [
+            "Directed acyclic graph",
+            "Trie only",
+            "Binary heap",
+            "Parse stack"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-030",
+          "unit": 3,
+          "question": "What is common subexpression elimination?",
+          "options": [
+            "Deleting every variable",
+            "Avoiding repeated evaluation of an unchanged expression",
+            "Removing all function calls",
+            "Adding redundant computations"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-031",
+          "unit": 4,
+          "question": "What is dead-code elimination?",
+          "options": [
+            "Deleting input files",
+            "Removing syntax errors",
+            "Removing all loops",
+            "Removing computations whose results are unused"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-032",
+          "unit": 4,
+          "question": "What is constant folding?",
+          "options": [
+            "Evaluating constant expressions at compile time",
+            "Inserting runtime checks",
+            "Renaming identifiers",
+            "Moving code into a loop"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-033",
+          "unit": 4,
+          "question": "What is loop-invariant code motion?",
+          "options": [
+            "Moving unchanged computations outside a loop",
+            "Unrolling every loop",
+            "Sorting loop variables",
+            "Converting loops to recursion"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-034",
+          "unit": 4,
+          "question": "What is strength reduction?",
+          "options": [
+            "Adding more instructions deliberately",
+            "Converting all code to assembly",
+            "Increasing precision of every value",
+            "Replacing expensive operations with cheaper equivalents"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-035",
+          "unit": 4,
+          "question": "What is a symbol table used for?",
+          "options": [
+            "Storing CPU instructions",
+            "Storing identifier information such as type and scope",
+            "Storing source comments only",
+            "Storing only executable code"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-036",
+          "unit": 4,
+          "question": "Which compiler phase performs type checking?",
+          "options": [
+            "Linking",
+            "Semantic analysis",
+            "Loading",
+            "Lexical analysis"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-037",
+          "unit": 4,
+          "question": "What is a type error?",
+          "options": [
+            "An operation applied to incompatible types",
+            "A disk read failure",
+            "A misspelled keyword only",
+            "A missing semicolon only"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-038",
+          "unit": 4,
+          "question": "What is backpatching?",
+          "options": [
+            "Filling unresolved jump targets later",
+            "Rewriting source comments",
+            "Compiling twice",
+            "Deleting unused symbols"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-039",
+          "unit": 4,
+          "question": "What is an activation record?",
+          "options": [
+            "Runtime storage for one procedure call",
+            "A compiler flag",
+            "A grammar production",
+            "A token buffer"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-040",
+          "unit": 4,
+          "question": "What is a stack frame commonly used for?",
+          "options": [
+            "Local variables and return information",
+            "Lexical patterns",
+            "Only global constants",
+            "Machine code optimization"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-041",
+          "unit": 5,
+          "question": "Which storage allocation naturally supports recursive calls?",
+          "options": [
+            "Stack allocation",
+            "Compile-time constants",
+            "Register allocation only",
+            "Static allocation only"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-042",
+          "unit": 5,
+          "question": "Which phase maps intermediate code to target instructions?",
+          "options": [
+            "Code generation",
+            "Parsing",
+            "Preprocessing",
+            "Lexical analysis"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-043",
+          "unit": 5,
+          "question": "What does register allocation decide?",
+          "options": [
+            "Which grammar is ambiguous",
+            "Which tokens are keywords",
+            "Which values occupy processor registers",
+            "Which files to link"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-044",
+          "unit": 5,
+          "question": "What is peephole optimization?",
+          "options": [
+            "Local optimization over a short instruction sequence",
+            "Whole-program parsing",
+            "Source formatting",
+            "Memory garbage collection"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-045",
+          "unit": 5,
+          "question": "What is a lexical error?",
+          "options": [
+            "An invalid token pattern",
+            "A missing return value only",
+            "A type mismatch only",
+            "An unreachable basic block"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-046",
+          "unit": 5,
+          "question": "What is a syntax error?",
+          "options": [
+            "An invalid disk block",
+            "A runtime memory leak only",
+            "A violation of grammar rules",
+            "A failed network request"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-047",
+          "unit": 5,
+          "question": "What is panic-mode error recovery?",
+          "options": [
+            "Deleting the grammar",
+            "Optimizing the parse table",
+            "Skipping input until a synchronizing token",
+            "Restarting the computer"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-048",
+          "unit": 5,
+          "question": "Which parser is commonly constructed from LR(0) items plus FOLLOW sets?",
+          "options": [
+            "LL(1) parser",
+            "SLR parser",
+            "Recursive-descent parser",
+            "Operator-precedence parser"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-049",
+          "unit": 5,
+          "question": "What does LALR stand for?",
+          "options": [
+            "Left-Associative LR",
+            "Lexical Analysis LR",
+            "Linear Algorithm LR",
+            "Look-Ahead LR"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-012-MCQ-050",
+          "unit": 5,
+          "question": "What is the purpose of an abstract syntax tree?",
+          "options": [
+            "Represent essential program structure without all concrete syntax",
+            "List only reserved keywords",
+            "Replace the linker",
+            "Store only source whitespace"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        }
+      ]
+    },
+    {
+      "subjectCode": "CST-015",
+      "subjectName": "Software Engineering",
+      "questions": [
+        {
+          "id": "CST-015-MCQ-001",
+          "unit": 1,
+          "question": "What is software engineering?",
+          "options": [
+            "Only writing code",
+            "Only software marketing",
+            "Only hardware design",
+            "A systematic engineering approach to software development"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-002",
+          "unit": 1,
+          "question": "What is the software crisis associated with?",
+          "options": [
+            "A shortage of CPUs",
+            "Only computer viruses",
+            "Difficulties delivering reliable software on time and budget",
+            "Only network failures"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-003",
+          "unit": 1,
+          "question": "Which SDLC model proceeds through largely sequential phases?",
+          "options": [
+            "Incremental model",
+            "Agile iteration",
+            "Spiral model",
+            "Waterfall model"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-004",
+          "unit": 1,
+          "question": "Which model emphasizes repeated risk analysis?",
+          "options": [
+            "V-model only",
+            "Big-bang model",
+            "Spiral model",
+            "Waterfall model"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-005",
+          "unit": 1,
+          "question": "Which model delivers software in small functional releases?",
+          "options": [
+            "Pure waterfall",
+            "One-shot model",
+            "Hardware lifecycle",
+            "Incremental model"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-006",
+          "unit": 1,
+          "question": "What does SDLC stand for?",
+          "options": [
+            "System Data Link Control",
+            "Software Development Life Cycle",
+            "Secure Database Lifecycle",
+            "Software Design Logic Code"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-007",
+          "unit": 1,
+          "question": "What is a functional requirement?",
+          "options": [
+            "Only a coding standard",
+            "Only a testing schedule",
+            "A statement of server price",
+            "A statement of what a system must do"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-008",
+          "unit": 1,
+          "question": "What is a non-functional requirement?",
+          "options": [
+            "A specific login feature",
+            "A database row",
+            "A report button",
+            "A quality or constraint such as performance"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-009",
+          "unit": 1,
+          "question": "What does SRS stand for?",
+          "options": [
+            "Software Requirements Specification",
+            "Software Review Standard",
+            "Source Revision Schedule",
+            "System Runtime Service"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-010",
+          "unit": 1,
+          "question": "Which property is desirable in an SRS?",
+          "options": [
+            "Unverifiable",
+            "Unambiguous",
+            "Incomplete",
+            "Contradictory"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-011",
+          "unit": 2,
+          "question": "What is requirements elicitation?",
+          "options": [
+            "Executing unit tests",
+            "Discovering stakeholder needs",
+            "Deploying a server",
+            "Compiling source code"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-012",
+          "unit": 2,
+          "question": "Which technique collects requirements through direct conversation?",
+          "options": [
+            "Code generation",
+            "Static analysis",
+            "Regression testing",
+            "Interview"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-013",
+          "unit": 2,
+          "question": "What is requirements validation?",
+          "options": [
+            "Checking requirements reflect stakeholder needs",
+            "Checking compiled machine code",
+            "Installing a package",
+            "Optimizing database indexes"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-014",
+          "unit": 2,
+          "question": "What is software verification?",
+          "options": [
+            "Estimating market share",
+            "Checking only user satisfaction",
+            "Checking the product is built according to specifications",
+            "Deploying to production"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-015",
+          "unit": 2,
+          "question": "What is software validation?",
+          "options": [
+            "Checking only syntax",
+            "Counting source lines",
+            "Checking the product meets user needs",
+            "Encrypting source code"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-016",
+          "unit": 2,
+          "question": "Which diagram commonly depicts actors and system interactions?",
+          "options": [
+            "Use-case diagram",
+            "Flow graph only",
+            "Gantt chart",
+            "ER diagram only"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-017",
+          "unit": 2,
+          "question": "What does high cohesion mean?",
+          "options": [
+            "Modules depend heavily on each other",
+            "No module has a purpose",
+            "A module's responsibilities are closely related",
+            "Every function is global"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-018",
+          "unit": 2,
+          "question": "What does low coupling mean?",
+          "options": [
+            "Modules share all internal data",
+            "Every module imports every other",
+            "Modules have minimal interdependence",
+            "No interfaces exist"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-019",
+          "unit": 2,
+          "question": "Which design approach models objects and their interactions?",
+          "options": [
+            "Only structured flowcharting",
+            "Object-oriented design",
+            "Assembly design",
+            "Network routing"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-020",
+          "unit": 2,
+          "question": "What is modularization?",
+          "options": [
+            "Combining all code into one file",
+            "Removing documentation",
+            "Replacing all tests",
+            "Dividing software into manageable components"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-021",
+          "unit": 3,
+          "question": "Which architecture separates presentation, business logic, and data layers?",
+          "options": [
+            "Layered architecture",
+            "Pipeline hazard",
+            "Monolithic loop",
+            "Peer-to-peer only"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-022",
+          "unit": 3,
+          "question": "Which architecture has services deployed independently?",
+          "options": [
+            "Pure waterfall",
+            "Microservices architecture",
+            "Sequential circuit",
+            "Single-process monolith"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-023",
+          "unit": 3,
+          "question": "Which UML diagram shows classes and relationships?",
+          "options": [
+            "State chart",
+            "Activity diagram",
+            "Sequence diagram",
+            "Class diagram"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-024",
+          "unit": 3,
+          "question": "Which UML diagram shows interactions ordered over time?",
+          "options": [
+            "Deployment diagram",
+            "Sequence diagram",
+            "Class diagram",
+            "Package diagram"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-025",
+          "unit": 3,
+          "question": "What is unit testing?",
+          "options": [
+            "Testing the entire organization",
+            "Testing only the network",
+            "Testing production only",
+            "Testing an individual component in isolation"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-026",
+          "unit": 3,
+          "question": "What is integration testing?",
+          "options": [
+            "Testing hardware alone",
+            "Testing interactions between combined components",
+            "Testing only one function",
+            "Testing without any interfaces"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-027",
+          "unit": 3,
+          "question": "What is system testing?",
+          "options": [
+            "Testing the complete integrated system",
+            "Reviewing requirements only",
+            "Checking source indentation",
+            "Testing only a single class"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-028",
+          "unit": 3,
+          "question": "What is acceptance testing?",
+          "options": [
+            "Testing a single unit only",
+            "Checking whether software meets acceptance criteria",
+            "Counting code lines",
+            "Checking syntax only"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-029",
+          "unit": 3,
+          "question": "What is black-box testing?",
+          "options": [
+            "Inspecting every statement",
+            "Testing only source-code branches",
+            "Testing memory chips",
+            "Testing functionality without using internal implementation details"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-030",
+          "unit": 3,
+          "question": "What is white-box testing?",
+          "options": [
+            "Testing without code knowledge",
+            "Testing customer interviews",
+            "Testing with knowledge of internal code structure",
+            "Testing only UI colors"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-031",
+          "unit": 4,
+          "question": "Which test design technique checks values at range edges?",
+          "options": [
+            "Mutation testing",
+            "Code coverage only",
+            "Boundary value analysis",
+            "Random guessing"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-032",
+          "unit": 4,
+          "question": "Which test technique partitions inputs into groups with similar behavior?",
+          "options": [
+            "Version control",
+            "Code refactoring",
+            "Load balancing",
+            "Equivalence partitioning"
+          ],
+          "answer": 3,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-033",
+          "unit": 4,
+          "question": "What is regression testing?",
+          "options": [
+            "Testing only the first release",
+            "Retesting after changes to catch unintended defects",
+            "Measuring processor speed",
+            "Deleting obsolete test cases"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-034",
+          "unit": 4,
+          "question": "What is alpha testing?",
+          "options": [
+            "Compiler optimization",
+            "Final testing by all public users",
+            "Pre-release testing in a controlled environment",
+            "Database normalization"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-035",
+          "unit": 4,
+          "question": "What is beta testing?",
+          "options": [
+            "Pre-release testing by selected external users",
+            "Unit testing by a developer only",
+            "A design diagram",
+            "A formal proof"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-036",
+          "unit": 4,
+          "question": "What is a test case?",
+          "options": [
+            "Only source code",
+            "Only a defect report",
+            "Inputs, conditions, and expected results for a test",
+            "A hardware specification"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-037",
+          "unit": 4,
+          "question": "What is a software defect?",
+          "options": [
+            "A successful deployment",
+            "A flaw that can cause incorrect behavior",
+            "A planned feature",
+            "A user manual"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-038",
+          "unit": 4,
+          "question": "What is risk management?",
+          "options": [
+            "Only purchasing hardware",
+            "Ignoring uncertain events",
+            "Identifying, analyzing, and responding to project risks",
+            "Only coding faster"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-039",
+          "unit": 4,
+          "question": "What does a Gantt chart display?",
+          "options": [
+            "Database joins",
+            "Tasks against a timeline",
+            "Class inheritance",
+            "Compiler tokens"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-040",
+          "unit": 4,
+          "question": "What is the critical path in project scheduling?",
+          "options": [
+            "The cheapest task",
+            "The longest-duration dependency path determining minimum completion time",
+            "The path with most developers",
+            "The first task only"
+          ],
+          "answer": 1,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-041",
+          "unit": 5,
+          "question": "What does LOC measure?",
+          "options": [
+            "List of classes",
+            "Length of compilation",
+            "Lines of code",
+            "Level of coupling"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-042",
+          "unit": 5,
+          "question": "What is function point analysis used for?",
+          "options": [
+            "Estimating functional size from user-visible functionality",
+            "Measuring network latency",
+            "Counting CPU instructions only",
+            "Sorting source files"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-043",
+          "unit": 5,
+          "question": "What is software configuration management?",
+          "options": [
+            "Controlling and tracking changes to software artifacts",
+            "Only hiring developers",
+            "Only drawing UML",
+            "Only running unit tests"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-044",
+          "unit": 5,
+          "question": "Which tool is commonly used for version control?",
+          "options": [
+            "Excel formulas",
+            "Photoshop",
+            "Git",
+            "A compiler linker"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-045",
+          "unit": 5,
+          "question": "What is change control?",
+          "options": [
+            "Disabling testing",
+            "Allowing untracked edits",
+            "Evaluating and approving proposed changes",
+            "Removing requirements"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-046",
+          "unit": 5,
+          "question": "What is reverse engineering?",
+          "options": [
+            "Writing a new system from requirements only",
+            "Performing only load tests",
+            "Analyzing an existing system to understand its design",
+            "Deleting legacy code"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-047",
+          "unit": 5,
+          "question": "What is software reengineering?",
+          "options": [
+            "Restructuring or improving an existing system",
+            "Writing only test cases",
+            "Buying new hardware",
+            "Designing only a logo"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-048",
+          "unit": 5,
+          "question": "What are CASE tools?",
+          "options": [
+            "Central Application Service Engines",
+            "Code Analysis Security Environments",
+            "Computer-Aided Software Engineering tools",
+            "Computer-Assisted Storage Engines"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-049",
+          "unit": 5,
+          "question": "What is maintainability?",
+          "options": [
+            "Ease of modifying and fixing software",
+            "Only its execution speed",
+            "Only its file size",
+            "Only its initial cost"
+          ],
+          "answer": 0,
+          "source": "Practice"
+        },
+        {
+          "id": "CST-015-MCQ-050",
+          "unit": 5,
+          "question": "What is technical debt?",
+          "options": [
+            "The license fee for a compiler",
+            "Money spent only on servers",
+            "Future maintenance cost caused by expedient design choices",
+            "A guaranteed project profit"
+          ],
+          "answer": 2,
+          "source": "Practice"
+        }
+      ]
+    }
+  ]
+}

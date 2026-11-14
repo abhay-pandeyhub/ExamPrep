@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | ExamPrep</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h2>ExamPrep</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+
+        <h1>Student Dashboard</h1>
+        <p class="dashboard-subtitle">
+            Select your academic details to start preparing.
+        </p>
+
+        <div class="selection-box">
+
+            <label for="year">Academic Year</label>
+            <select id="year">
+                <option value="">Select Year</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select>
+
+            <label for="semester">Semester</label>
+            <select id="semester">
+                <option value="">Select Semester</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <select id="subject">
+                <option value="">Select Subject</option>
+            </select>
+
+            <label for="unit">Syllabus Unit</label>
+            <select id="unit">
+                <option value="all">All Units</option>
+                <option value="1">Unit 1</option>
+                <option value="2">Unit 2</option>
+                <option value="3">Unit 3</option>
+                <option value="4">Unit 4</option>
+                <option value="5">Unit 5</option>
+            </select>
+
+            <button id="continueBtn">Continue</button>
+
+        </div>
+
+        <p id="selectionResult" class="selection-result"></p>
+
+    </main>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
