@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UGC NET Mock Test | ExamPrep</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/ugc-mock.css">
+
+<style>
+  .back-dashboard-btn {
+    display: inline-block;
+    padding: 13px 28px;
+    margin: 20px auto 35px;
+    background: #2563eb;
+    color: #ffffff;
+    border: 1px solid #3b82f6;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .back-dashboard-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 18px rgba(37, 99, 235, 0.3);
+  }
+</style>
+
+</head>
+<body>
+
+  <header>
+    <h2>ExamPrep</h2>
+    <nav>
+      <a href="ugc-net.html">← UGC NET Dashboard</a>
+    </nav>
+  </header>
+
+  <main class="exam-options">
+
+    <section id="mockDashboard">
+      <h1>UGC NET Mock Test Series</h1>
+      <p>Practice with questions from both papers.</p>
+
+      <div class="options-grid">
+        <div class="option-card">
+          <h2>Full-Length Mock Test</h2>
+          <p>150 Questions | 300 Marks | 180 Minutes</p>
+          <button id="fullMockBtn">Start Full Mock</button>
+        </div>
+
+        <div class="option-card">
+          <h2>Paper-wise Mock Test</h2>
+          <p>Practice Paper 1 or Paper 2 separately.</p>
+
+          <select id="paperSelect">
+            <option value="">Select Paper</option>
+            <option value="Paper 1">Paper 1</option>
+            <option value="Paper 2">Paper 2 — Computer Science</option>
+          </select>
+
+          <button id="paperMockBtn">Start Paper Mock</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="examScreen" hidden>
+      <h2 id="examTitle">UGC NET Mock Test</h2>
+      <h3>Time Left: <span id="timer">03:00:00</span></h3>
+
+      <div class="options-grid">
+        <div class="option-card">
+          <p id="questionNumber"></p>
+          <p id="questionMarks"></p>
+          <h3 id="questionText"></h3>
+
+          <div id="answerOptions"></div>
+
+          <div style="margin-top:20px">
+            <button id="previousBtn">Previous</button>
+            <button id="reviewBtn">Mark for Review</button>
+            <button id="nextBtn">Save & Next</button>
+          </div>
+        </div>
+
+        <div class="option-card">
+          <h3>Question Palette</h3>
+          <div id="questionPalette"></div>
+          <button id="submitTestBtn">Submit Test</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultScreen" hidden>
+      <h1>Mock Test Result</h1>
+      <div id="resultSummary"></div>
+      <div id="resultSolutions"></div>
+
+     
+<button id="backToDashboardBtn" class="back-dashboard-btn">
+  ← Back to Dashboard
+</button>
+
+    </section>
+
+  </main>
+
+  <script src="js/ugc-mock.js"></script>
+</body>
+</html>

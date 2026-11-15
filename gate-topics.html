@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GATE CSE Topics - ExamPrep</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h2>ExamPrep</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gate.html">GATE Dashboard</a>
+        <a href="gate-subjects.html">All Subjects</a>
+    </nav>
+</header>
+
+<main class="exam-options">
+    <h1 id="subjectHeading">Select a Topic</h1>
+
+    <p class="options-subtitle">
+        Choose a topic to start your GATE CSE practice.
+    </p>
+
+    <div class="options-grid" id="topicGrid"></div>
+</main>
+
+<footer>
+    <p>© 2026 ExamPrep | B.Tech CSE Mini Project</p>
+</footer>
+
+<script>
+const savedSubject = localStorage.getItem("gateSelectedSubject");
+const topicGrid = document.getElementById("topicGrid");
+const subjectHeading = document.getElementById("subjectHeading");
+
+let subject = null;
+
+try {
+    subject = JSON.parse(savedSubject);
+} catch (error) {
+    console.error("Invalid saved subject:", error);
+}
+
+if (!subject || !Array.isArray(subject.topics)) {
+    subjectHeading.textContent = "No Subject Selected";
+
+    const message = document.createElement("p");
+    message.textContent = "Please select a subject first.";
+
+    const link = document.createElement("a");
+    link.href = "gate-subjects.html";
+    link.textContent = "← Choose Subject";
+    link.className = "performance-btn";
+
+    topicGrid.append(message, link);
+} else {
+    subjectHeading.textContent = subject.name + " - Topics";
+
+    subject.topics.forEach((topic, index) => {
+        const card = document.createElement("div");
+        card.className = "option-card";
+
+        const icon = document.createElement("div");
+        icon.className = "option-icon";
+        icon.textContent = "📘";
+
+        const heading = document.createElement("h2");
+        heading.textContent = topic;
+
+        const description = document.createElement("p");
+        description.textContent =
+            "Practice GATE CSE questions from this topic.";
+
+        const button = document.createElement("button");
+        button.textContent = "study topics";
+
+        button.addEventListener("click", () => {
+            localStorage.setItem(
+                "gateSelectedTopic",
+                JSON.stringify({
+                    subject: subject.name,
+                    topic: topic
+                })
+            );
+
+            window.location.href = "gate-study.html";
+        });
+
+        card.append(icon, heading, description, button);
+        topicGrid.appendChild(card);
+    });
+}
+</script>
+
+</body>
+</html>

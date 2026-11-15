@@ -1,0 +1,110 @@
+
+/* UGC NET Mock Test - ExamPrep */
+
+#examScreen {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+#examScreen > h2,
+#examScreen > h3 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#examScreen > .options-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+  gap: 24px;
+  align-items: start;
+  max-width: none;
+  width: 100%;
+  margin-top: 25px;
+}
+
+#examScreen .option-card {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 28px;
+}
+
+#questionText {
+  font-size: 20px;
+  line-height: 1.7;
+  margin: 25px 0;
+}
+
+#answerOptions label {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#answerOptions label:hover {
+  background: #1e293b;
+}
+
+#examScreen .option-card > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#questionPalette {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 7px;
+  max-height: 420px;
+  overflow-y: auto;
+  padding: 8px;
+}
+
+#questionPalette button {
+  margin: 0 !important;
+  padding: 10px 0;
+  min-width: 0;
+}
+
+#submitTestBtn {
+  width: 100%;
+  margin-top: 20px;
+  background: #059669;
+}
+
+#resultScreen {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#resultSolutions .option-card {
+  margin: 15px 0;
+  text-align: left;
+}
+
+#examScreen[hidden],
+#mockDashboard[hidden],
+#resultScreen[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 800px) {
+  #examScreen > .options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #examScreen .option-card {
+    padding: 18px;
+  }
+
+  #questionText {
+    font-size: 17px;
+  }
+}

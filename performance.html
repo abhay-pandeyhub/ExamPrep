@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Performance | ExamPrep</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h2>ExamPrep</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="exam-options.html">Exam Options</a>
+        </nav>
+    </header>
+
+    <main class="performance-page">
+
+        <section class="performance-heading">
+            <h1>My Performance</h1>
+            <p>
+                Track your mock test scores, analyze your
+                progress and improve your exam preparation.
+            </p>
+        </section>
+
+        <!-- Performance Summary -->
+        <section class="performance-summary">
+
+            <div class="performance-card">
+                <h3>Total Tests</h3>
+                <h2 id="totalTests">0</h2>
+                <p>MCQ tests attempted</p>
+            </div>
+
+            <div class="performance-card">
+                <h3>Average Score</h3>
+                <h2 id="averageScore">0%</h2>
+                <p>Overall average percentage</p>
+            </div>
+
+            <div class="performance-card">
+                <h3>Highest Score</h3>
+                <h2 id="highestScore">0%</h2>
+                <p>Your best performance</p>
+            </div>
+
+            <div class="performance-card">
+                <h3>Total Correct</h3>
+                <h2 id="totalCorrect">0</h2>
+                <p>Correct answers across tests</p>
+            </div>
+
+        </section>
+
+        <!-- Subject-wise Performance -->
+        <section class="performance-section">
+            <h2>Subject-wise Performance</h2>
+            <p>
+                Compare your average scores across subjects.
+            </p>
+
+            <div id="subjectPerformance"
+                 class="subject-performance-list">
+                <p>No subject performance available yet.</p>
+            </div>
+        </section>
+
+        <!-- Test History -->
+        <section class="performance-section">
+            <h2>Previous Test History</h2>
+            <p>
+                View your recently completed MCQ mock tests.
+            </p>
+
+            <div class="performance-table-wrapper">
+                <table class="performance-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Subject</th>
+                            <th>Score</th>
+                            <th>Percentage</th>
+                            <th>Correct</th>
+                            <th>Incorrect</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="testHistory">
+                        <tr>
+                            <td colspan="6">
+                                No tests attempted yet.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="performance-actions">
+            <a href="dashboard.html"
+               class="performance-btn">
+                Take Another Test
+            </a>
+        </div>
+
+    </main>
+
+    <script src="js/performance.js"></script>
+
+</body>
+</html>

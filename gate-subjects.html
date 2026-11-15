@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GATE CSE Subjects - ExamPrep</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>ExamPrep</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="competitive.html">Competitive Prep</a>
+        <a href="gate.html">GATE Dashboard</a>
+    </nav>
+</header>
+
+<main class="exam-options">
+
+    <h1>GATE CSE - Subject-wise Practice</h1>
+
+    <p class="options-subtitle">
+        Select a subject based on the GATE 2027 CSE syllabus.
+    </p>
+
+    <div class="options-grid" id="gateSubjectGrid"></div>
+
+</main>
+
+<footer>
+    <p>© 2026 ExamPrep | B.Tech CSE Mini Project</p>
+</footer>
+
+<script>
+const gateSubjects = [
+    {
+        name: "Engineering Mathematics",
+        icon: "📐",
+        topics: [
+            "Discrete Mathematics",
+            "Linear Algebra",
+            "Calculus",
+            "Probability and Statistics"
+        ]
+    },
+    {
+        name: "Digital Logic",
+        icon: "🔢",
+        topics: [
+            "Boolean Algebra and Minimization",
+            "Combinational and Sequential Circuits",
+            "Number Representation and Arithmetic"
+        ]
+    },
+    {
+        name: "Computer Organization and Architecture",
+        icon: "💻",
+        topics: [
+            "Instruction Set and Addressing Modes",
+            "ALU and Control Unit",
+            "Memory Hierarchy and Cache",
+            "I/O Interface",
+            "Instruction Pipelining"
+        ]
+    },
+    {
+        name: "Programming and Data Structures",
+        icon: "🧩",
+        topics: [
+            "C Programming",
+            "Recursion",
+            "Arrays, Stacks and Queues",
+            "Linked Lists",
+            "Trees, Heaps and Graphs"
+        ]
+    },
+    {
+        name: "Algorithms",
+        icon: "⚙️",
+        topics: [
+            "Searching, Sorting and Hashing",
+            "Time and Space Complexity",
+            "Greedy Algorithms",
+            "Dynamic Programming",
+            "Divide and Conquer",
+            "Graph Algorithms"
+        ]
+    },
+    {
+        name: "Theory of Computation",
+        icon: "🔄",
+        topics: [
+            "Regular Expressions and Finite Automata",
+            "Context-Free Grammars and PDA",
+            "Pumping Lemma",
+            "Turing Machines and Undecidability"
+        ]
+    },
+    {
+        name: "Compiler Design",
+        icon: "🖥️",
+        topics: [
+            "Lexical Analysis",
+            "Parsing",
+            "Syntax-Directed Translation",
+            "Runtime Environments",
+            "Intermediate Code Generation",
+            "Optimization and Data Flow Analysis"
+        ]
+    },
+    {
+        name: "Operating System",
+        icon: "🗂️",
+        topics: [
+            "Processes and Threads",
+            "Concurrency and Synchronization",
+            "Deadlocks",
+            "CPU and I/O Scheduling",
+            "Memory Management",
+            "File Systems"
+        ]
+    },
+    {
+        name: "Databases",
+        icon: "🗄️",
+        topics: [
+            "ER Model",
+            "Relational Model and SQL",
+            "Integrity Constraints and Normalization",
+            "File Organization and Indexing",
+            "Transactions and Concurrency Control"
+        ]
+    },
+    {
+        name: "Computer Networks",
+        icon: "🌐",
+        topics: [
+            "Network Layering and Switching",
+            "Data Link Layer and Ethernet",
+            "Routing Algorithms",
+            "IPv4, CIDR and NAT",
+            "TCP",
+            "DNS and HTTP"
+        ]
+    },
+    {
+        name: "General Aptitude",
+        icon: "🎯",
+        topics: [
+            "Verbal Aptitude",
+            "Quantitative Aptitude",
+            "Analytical Aptitude",
+            "Spatial Aptitude"
+        ]
+    }
+];
+
+const grid = document.getElementById("gateSubjectGrid");
+
+gateSubjects.forEach((subject, index) => {
+    const card = document.createElement("div");
+    card.className = "option-card";
+
+    const icon = document.createElement("div");
+    icon.className = "option-icon";
+    icon.textContent = subject.icon;
+
+    const heading = document.createElement("h2");
+    heading.textContent = subject.name;
+
+    const description = document.createElement("p");
+    description.textContent =
+        subject.topics.length + " topic groups available";
+
+    const button = document.createElement("button");
+    button.textContent = "Explore Topics";
+
+    button.addEventListener("click", () => {
+        localStorage.setItem(
+            "gateSelectedSubject",
+            JSON.stringify(subject)
+        );
+
+        window.location.href = "gate-topics.html";
+    });
+
+    card.append(icon, heading, description, button);
+    grid.appendChild(card);
+});
+</script>
+
+</body>
+</html>

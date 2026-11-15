@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UGC NET Practice | ExamPrep</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h2>ExamPrep</h2>
+    <nav>
+      <a href="ugc-subjects.html">← Back to Subjects</a>
+      <a href="ugc-net.html">UGC NET Dashboard</a>
+    </nav>
+  </header>
+
+  <main class="exam-options">
+
+    <h1 id="practiceTitle">UGC NET Practice</h1>
+    <p id="practiceInfo"></p>
+
+    <div class="option-card" id="questionCard">
+      <p id="questionNumber"></p>
+      <h3 id="questionText"></h3>
+
+      <div id="answerOptions"></div>
+
+      <div style="margin-top: 20px;">
+        <button id="previousBtn">Previous</button>
+        <button id="nextBtn">Save & Next</button>
+        <button id="submitBtn">Submit Practice</button>
+      </div>
+    </div>
+
+    <section id="resultSection" hidden>
+      <h2>Practice Result</h2>
+      <div id="resultSummary"></div>
+      <div id="resultSolutions"></div>
+
+      <button onclick="location.href='ugc-subjects.html'">
+        Back to Subjects
+      </button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 ExamPrep | B.Tech CSE Mini Project</p>
+  </footer>
+
+  <script src="js/ugc-practice.js"></script>
+</body>
+</html>

@@ -1,0 +1,2625 @@
+{
+  "Engineering Mathematics::Discrete Mathematics": {
+    "subject": "Engineering Mathematics",
+    "topic": "Discrete Mathematics",
+    "overview": "Detailed concept explanations, worked examples and GATE exam guidance.",
+    "sections": [
+      {
+        "heading": "Propositional logic and truth tables",
+        "body": "A proposition is a declarative sentence with exactly one truth value. Logical connectives combine propositions. Negation ¬p reverses p; p∧q requires both true; p∨q is inclusive OR; p→q is false only for p=true and q=false; p↔q is true when both truth values match. A truth table with n distinct variables has 2^n rows.",
+        "points": [
+          "Equivalences: p→q ≡ ¬p∨q; p↔q ≡ (p→q)∧(q→p).",
+          "De Morgan: ¬(p∧q) ≡ ¬p∨¬q; ¬(p∨q) ≡ ¬p∧¬q.",
+          "Example: ¬(p→q) = ¬(¬p∨q) = p∧¬q.",
+          "GATE tip: a conditional is NOT the same as its converse q→p; it is equivalent to its contrapositive ¬q→¬p."
+        ]
+      },
+      {
+        "heading": "Predicate logic and quantifiers",
+        "body": "A predicate P(x) becomes a proposition when x is assigned or quantified. ∀x P(x) means all elements in the domain satisfy P; ∃x P(x) means at least one does. The domain and order of quantifiers matter.",
+        "points": [
+          "Negations: ¬∀x P(x) ≡ ∃x ¬P(x); ¬∃x P(x) ≡ ∀x ¬P(x).",
+          "Example: negation of “Every student passed” is “At least one student did not pass,” not “No student passed.”",
+          "Example: ∀x∃y Loves(x,y) need not imply ∃y∀x Loves(x,y).",
+          "GATE tip: always write the domain before interpreting nested quantifiers."
+        ]
+      },
+      {
+        "heading": "Sets, power sets and counting",
+        "body": "A set contains distinct elements. Union combines members, intersection retains common members, and A−B retains members in A but not B. The power set P(A) contains every subset, including ∅ and A.",
+        "points": [
+          "For finite sets: |A∪B|=|A|+|B|−|A∩B|.",
+          "For three sets: |A∪B∪C|=|A|+|B|+|C|−|A∩B|−|A∩C|−|B∩C|+|A∩B∩C|.",
+          "If |A|=n, then |P(A)|=2^n; if |A|=m and |B|=n, then |A×B|=mn.",
+          "Example: 40 know C, 30 know Python, 15 know both; 40+30−15=55 know at least one.",
+          "GATE tip: distinguish “exactly one” from “at least one” in Venn-diagram questions."
+        ]
+      },
+      {
+        "heading": "Relations and their properties",
+        "body": "A binary relation R on A is a subset of A×A. Reflexive means (a,a)∈R for all a. Symmetric means aRb⇒bRa. Antisymmetric means aRb and bRa⇒a=b. Transitive means aRb and bRc⇒aRc.",
+        "points": [
+          "Equivalence relation = reflexive + symmetric + transitive; it partitions A into disjoint equivalence classes.",
+          "Partial order = reflexive + antisymmetric + transitive.",
+          "Example: divisibility on positive integers is a partial order, but not symmetric: 2 divides 4, 4 does not divide 2.",
+          "GATE trap: antisymmetric does NOT mean “not symmetric”; equality satisfies both symmetric and antisymmetric."
+        ]
+      },
+      {
+        "heading": "Functions: injection, surjection and bijection",
+        "body": "A function f:A→B maps each input to exactly one output. Injective (one-to-one) means f(a)=f(b) implies a=b. Surjective (onto) means each b∈B is hit. Bijective means both and therefore has an inverse.",
+        "points": [
+          "Number of functions A→B for |A|=m, |B|=n is n^m.",
+          "For finite sets of equal size, injection, surjection and bijection are equivalent conditions.",
+          "Example: f:ℤ→ℤ, f(x)=2x is injective but not surjective because odd integers are never outputs.",
+          "GATE tip: codomain matters; f(x)=x² is not onto ℝ but is onto [0,∞) when domain is ℝ."
+        ]
+      },
+      {
+        "heading": "Posets, Hasse diagrams and lattices",
+        "body": "A partially ordered set (poset) has a reflexive, antisymmetric, transitive relation. A Hasse diagram suppresses reflexive loops and transitive edges; higher nodes represent larger elements. A lattice is a poset where every pair has a greatest lower bound (meet) and least upper bound (join).",
+        "points": [
+          "In the divisibility poset of divisors of 12, meet = gcd and join = lcm (both remain among divisors of 12).",
+          "Example: for 3 and 4 among divisors of 12, meet=gcd(3,4)=1 and join=lcm(3,4)=12.",
+          "A maximal element need not be the greatest element; a poset may have multiple incomparable maximal elements.",
+          "GATE tip: check every pair for meet and join before declaring a poset a lattice."
+        ]
+      },
+      {
+        "heading": "Monoids and groups",
+        "body": "A binary operation * on S is closed when a*b∈S. A semigroup has associativity. A monoid adds an identity e with e*a=a*e=a. A group adds an inverse for every element. An abelian group also has commutativity.",
+        "points": [
+          "(ℤ,+) is an abelian group: identity 0, inverse of a is −a.",
+          "(ℕ₀,+) is a monoid but not a group: positive elements lack additive inverses in ℕ₀.",
+          "Example: integers modulo 5 under addition form a group; inverse of 2 is 3 because 2+3≡0 (mod 5).",
+          "GATE tip: check associativity and closure; do not infer group merely from identity and inverse examples."
+        ]
+      },
+      {
+        "heading": "Graph basics and connectivity",
+        "body": "An undirected graph G=(V,E) contains vertices and edges. A walk can repeat edges; a path (in the usual simple-path sense) does not repeat vertices. A connected graph has a path between each vertex pair. A tree is connected and acyclic.",
+        "points": [
+          "Handshaking lemma: Σdeg(v)=2|E|; therefore the number of odd-degree vertices is even.",
+          "A tree with n vertices has n−1 edges; a simple undirected graph has at most n(n−1)/2 edges.",
+          "Example: if 6 vertices each have degree 3, then |E|=(6×3)/2=9.",
+          "GATE tip: for directed graphs, Σ indegree = Σ outdegree = |E|."
+        ]
+      },
+      {
+        "heading": "Graph matching and colouring",
+        "body": "A matching is a set of edges sharing no endpoints; a maximum matching has the largest number of edges. A perfect matching covers every vertex. A proper vertex colouring assigns different colours to adjacent vertices. The chromatic number χ(G) is the minimum number of colours needed.",
+        "points": [
+          "For a bipartite graph, χ(G)≤2 (if it has at least one edge, χ(G)=2).",
+          "An odd cycle needs 3 colours; an even cycle needs 2. A complete graph K_n needs n colours.",
+          "Example: C5 is an odd cycle, so χ(C5)=3.",
+          "GATE tip: “maximal matching” means no edge can be added; it need not be “maximum matching.”"
+        ]
+      },
+      {
+        "heading": "Combinatorics and pigeonhole principle",
+        "body": "The multiplication rule counts sequential independent choices; the addition rule counts mutually exclusive alternatives. Permutations count ordered arrangements; combinations count unordered selections. Pigeonhole principle guarantees some box contains at least ⌈N/k⌉ objects when N objects occupy k boxes.",
+        "points": [
+          "nPr=n!/(n−r)!; nCr=n!/[r!(n−r)!].",
+          "Number of length-r strings from n symbols with repetition allowed is n^r.",
+          "Example: choose 3 from 5: 5C3=5!/(3!2!)=10. Arrange those 3: 5P3=5×4×3=60.",
+          "GATE tip: decide whether order matters and whether repetition is allowed before selecting a formula."
+        ]
+      },
+      {
+        "heading": "Recurrence relations",
+        "body": "A recurrence defines a sequence from earlier terms. For linear homogeneous recurrences with constant coefficients, solve the characteristic polynomial. Nonhomogeneous recurrences require a particular solution as well.",
+        "points": [
+          "Example: a_n=3a_(n−1), a_0=2 ⇒ a_n=2·3^n.",
+          "Example: a_n=5a_(n−1)−6a_(n−2); characteristic r²−5r+6=(r−2)(r−3), so a_n=A·2^n+B·3^n.",
+          "Initial conditions determine constants A and B.",
+          "GATE tip: check recurrence index and base cases; a valid general solution still needs initial conditions."
+        ]
+      },
+      {
+        "heading": "Generating functions",
+        "body": "The ordinary generating function of a sequence (a_n) is A(x)=Σ_(n≥0) a_n x^n. Algebra on generating functions can convert recurrences into solvable equations and encode counting problems.",
+        "points": [
+          "Geometric series: 1/(1−x)=Σ_(n≥0) x^n for |x|<1.",
+          "Differentiate: 1/(1−x)²=Σ_(n≥0)(n+1)x^n.",
+          "Example: a_n=2^n has A(x)=1/(1−2x) for |x|<1/2.",
+          "GATE tip: identify the coefficient of x^n; do not confuse the function A(x) with a single sequence term."
+        ]
+      },
+      {
+        "heading": "Discrete Mathematics: quick revision and traps",
+        "body": "Practice truth tables, quantifier negation, relation-property counterexamples, Hasse diagrams, graph invariants, recurrence solving and generating-function coefficients.",
+        "points": [
+          "Tautology: true for every assignment; contradiction: false for every assignment.",
+          "Equivalence class partitions are disjoint; partial orders need not compare every pair.",
+          "Graph: Σdeg=2|E|; tree edges=n−1; K_n edges=n(n−1)/2.",
+          "GATE tip: use a small counterexample to disprove universal claims about relations, functions and graphs."
+        ]
+      }
+    ]
+  },
+  "Engineering Mathematics::Linear Algebra": {
+    "subject": "Engineering Mathematics",
+    "topic": "Linear Algebra",
+    "overview": "Detailed concept explanations, worked examples and GATE exam guidance.",
+    "sections": [
+      {
+        "heading": "Matrices: dimensions and operations",
+        "body": "An m×n matrix has m rows and n columns. Addition requires equal dimensions. Product AB is defined only when columns(A)=rows(B); generally AB≠BA. Transpose reverses rows and columns, with (AB)^T=B^T A^T.",
+        "points": [
+          "Identity I satisfies AI=IA=A when dimensions permit.",
+          "For square A, invertibility means there exists A⁻¹ with AA⁻¹=A⁻¹A=I.",
+          "Example: A=[[1,2],[3,4]], B=[[0,1],[1,0]]. AB=[[2,1],[4,3]], BA=[[3,4],[1,2]]; not equal.",
+          "GATE tip: check dimensions before multiplication; transpose reverses product order."
+        ]
+      },
+      {
+        "heading": "Determinants and properties",
+        "body": "Determinant is defined for square matrices and measures signed volume scaling. A matrix is invertible iff det(A)≠0. For 2×2 [[a,b],[c,d]], det=ad−bc. Swapping two rows reverses determinant sign; multiplying a row by k multiplies determinant by k.",
+        "points": [
+          "det(AB)=det(A)det(B); det(A^T)=det(A); det(A⁻¹)=1/det(A).",
+          "For triangular matrices, determinant is product of diagonal entries.",
+          "Example: det([[2,1],[5,3]])=2·3−1·5=1, so inverse exists.",
+          "GATE tip: use row operations to simplify a determinant, tracking sign and scale changes."
+        ]
+      },
+      {
+        "heading": "Rank and row reduction",
+        "body": "Rank is the maximum number of linearly independent rows (equivalently columns). Gaussian elimination uses elementary row operations to reach echelon form; rank equals number of nonzero pivot rows. For an m×n matrix rank≤min(m,n).",
+        "points": [
+          "Example: [[1,2],[2,4]] has second row twice the first, so rank=1.",
+          "A square n×n matrix is invertible iff rank=n.",
+          "For Ax=b, compare rank(A) with rank([A|b]) to test consistency.",
+          "GATE tip: dependent equations do not add new pivots; do not equate number of equations with rank."
+        ]
+      },
+      {
+        "heading": "Systems of linear equations",
+        "body": "Ax=b is consistent when b lies in the column space of A. Rouché–Capelli: consistent iff rank(A)=rank([A|b]). If consistent, unique solution when rank(A)=number of unknowns; otherwise infinitely many solutions over ℝ.",
+        "points": [
+          "Example: x+y=3 and 2x+2y=6 are dependent, giving infinitely many solutions.",
+          "Example: x+y=3 and 2x+2y=7 are inconsistent because the left side doubles but the right side does not.",
+          "For homogeneous Ax=0, at least the zero solution always exists; nonzero solutions exist iff rank(A)<n.",
+          "GATE tip: check augmented rank first, then compare with number of variables."
+        ]
+      },
+      {
+        "heading": "Vector spaces and linear independence",
+        "body": "Vectors are linearly independent if the only solution of c1v1+⋯+ckvk=0 is all ci=0. A basis is an independent spanning set; its size is dimension. In ℝ^n, any n independent vectors form a basis.",
+        "points": [
+          "Example: (1,0) and (0,1) form a basis of ℝ².",
+          "Example: (1,2) and (2,4) are dependent because the second is twice the first.",
+          "Nullity = number of free variables = n−rank(A) (rank–nullity theorem).",
+          "GATE tip: distinguish span (coverage) from independence (no redundancy)."
+        ]
+      },
+      {
+        "heading": "Eigenvalues and eigenvectors",
+        "body": "For square A, nonzero vector v is an eigenvector with eigenvalue λ if Av=λv. Eigenvalues satisfy det(A−λI)=0. Trace equals sum of eigenvalues and determinant equals their product, counting algebraic multiplicity.",
+        "points": [
+          "Example: diagonal matrix diag(2,5) has eigenvalues 2 and 5 with standard basis eigenvectors.",
+          "Example: A=[[2,1],[0,3]] is triangular, so eigenvalues are diagonal entries 2 and 3.",
+          "For invertible A, eigenvalues of A⁻¹ are reciprocals 1/λ.",
+          "GATE tip: zero vector is never an eigenvector; repeated eigenvalues need not give enough independent eigenvectors."
+        ]
+      },
+      {
+        "heading": "Diagonalization",
+        "body": "A is diagonalizable if A=PDP⁻¹ with columns of P linearly independent eigenvectors and D corresponding eigenvalues. A real symmetric matrix always has an orthonormal eigenbasis (spectral theorem).",
+        "points": [
+          "Distinct eigenvalues of an n×n matrix guarantee diagonalizability, but repeated eigenvalues may still be diagonalizable.",
+          "Example: diag(2,2) is already diagonalizable despite a repeated eigenvalue.",
+          "Example: [[1,1],[0,1]] has only one independent eigenvector, so it is not diagonalizable.",
+          "GATE tip: distinguish algebraic multiplicity from geometric multiplicity."
+        ]
+      },
+      {
+        "heading": "LU decomposition",
+        "body": "LU factorization writes A=LU where L is lower triangular and U is upper triangular. It helps solve Ax=b efficiently for multiple right-hand sides: solve Ly=b, then Ux=y. Row pivoting may be required, yielding PA=LU.",
+        "points": [
+          "Example: A=[[2,1],[4,3]] = [[1,0],[2,1]] · [[2,1],[0,1]].",
+          "Check: product first row (2,1); second row (4,2+1)=(4,3).",
+          "GATE tip: if a pivot is zero, row exchanges may be necessary; do not assume LU without pivoting always exists."
+        ]
+      },
+      {
+        "heading": "Linear Algebra: worked system",
+        "body": "Solve 2x+y=5 and x−y=1. From second equation x=1+y. Substitute into first: 2(1+y)+y=5 ⇒ 3y=3 ⇒ y=1, x=2.",
+        "points": [
+          "Matrix form: [[2,1],[1,−1]][x,y]^T=[5,1]^T.",
+          "Determinant = (2)(−1)−(1)(1)=−3≠0, so the solution is unique.",
+          "GATE tip: check the determinant or rank before investing time in lengthy elimination."
+        ]
+      },
+      {
+        "heading": "Linear Algebra: quick revision",
+        "body": "Practice determinant shortcuts, row reduction, ranks of parameterized matrices, homogeneous systems, eigenvalue invariants and LU factorization.",
+        "points": [
+          "det(A)=0 ⇔ rank(A)<n ⇔ A singular (square A).",
+          "For n variables: unique solution if consistent and rank=n; infinitely many if consistent and rank<n.",
+          "Trace=Σ eigenvalues; determinant=Π eigenvalues.",
+          "GATE trap: AB and BA may have different dimensions, and matrix multiplication is not generally commutative."
+        ]
+      }
+    ]
+  },
+  "Engineering Mathematics::Calculus": {
+    "subject": "Engineering Mathematics",
+    "topic": "Calculus",
+    "overview": "Detailed concept explanations, worked examples and GATE exam guidance.",
+    "sections": [
+      {
+        "heading": "Limits and continuity",
+        "body": "A limit lim_(x→a)f(x)=L means f(x) approaches L as x approaches a. Continuity at a requires f(a) defined, limit exists, and lim f(x)=f(a). Left and right limits must agree for a two-sided limit.",
+        "points": [
+          "Standard limits: lim_(x→0) sin x/x=1; lim_(x→0)(e^x−1)/x=1.",
+          "Example: f(x)=x² for x≠2 and f(2)=5 has limit 4 at 2 but is discontinuous there because f(2)≠4.",
+          "GATE tip: piecewise functions require checking left limit, right limit and actual value separately."
+        ]
+      },
+      {
+        "heading": "Differentiability",
+        "body": "Derivative f′(a)=lim_(h→0)[f(a+h)−f(a)]/h measures instantaneous rate of change. Differentiability implies continuity, but continuity does not imply differentiability. Product, quotient and chain rules compute derivatives of compositions.",
+        "points": [
+          "Chain rule: d/dx f(g(x))=f′(g(x))g′(x).",
+          "Example: d/dx sin(x²)=cos(x²)·2x.",
+          "Example: |x| is continuous at 0 but not differentiable there because left slope −1 and right slope +1 differ.",
+          "GATE tip: at corners, cusps and piecewise junctions, compare one-sided derivatives."
+        ]
+      },
+      {
+        "heading": "Mean Value Theorem and Rolle’s theorem",
+        "body": "Rolle: if f continuous on [a,b], differentiable on (a,b), and f(a)=f(b), then some c∈(a,b) has f′(c)=0. Lagrange MVT: with continuity and differentiability, some c satisfies f′(c)=[f(b)−f(a)]/(b−a).",
+        "points": [
+          "Example: f(x)=x² on [1,3], average slope=(9−1)/(3−1)=4. Since f′(x)=2x, c=2.",
+          "GATE tip: first verify theorem hypotheses; a discontinuity invalidates direct application."
+        ]
+      },
+      {
+        "heading": "Maxima, minima and stationary points",
+        "body": "An interior differentiable local extremum has f′(x)=0 (necessary, not sufficient). Critical points include derivative zero or undefined. Second derivative test: if f′(c)=0 and f″(c)>0, local minimum; if f″(c)<0, local maximum; if f″(c)=0, inconclusive.",
+        "points": [
+          "Example: f(x)=x²−4x+7 ⇒ f′=2x−4=0 at x=2, f″=2>0; minimum f(2)=3.",
+          "Example: f(x)=x³ has f′(0)=0 but no local extremum at 0.",
+          "GATE tip: for global extrema on a closed interval, check critical points AND endpoints."
+        ]
+      },
+      {
+        "heading": "Increasing/decreasing and convexity",
+        "body": "When f′>0 on an interval, f increases there; when f′<0, it decreases. f″>0 indicates convexity (concave upward), while f″<0 indicates concavity downward for twice-differentiable functions.",
+        "points": [
+          "Example: f(x)=x³−3x has f′=3(x−1)(x+1): increasing for x<−1 and x>1, decreasing for −1<x<1.",
+          "At x=−1: local maximum f(−1)=2; at x=1: local minimum f(1)=−2.",
+          "GATE tip: derivative sign charts are often more reliable than a memorized second derivative rule."
+        ]
+      },
+      {
+        "heading": "Definite and indefinite integration",
+        "body": "An antiderivative F satisfies F′=f, so ∫f(x)dx=F(x)+C. Fundamental theorem: if F′=f, then ∫_a^b f(x)dx=F(b)−F(a). Definite integrals give signed area, not always geometric area.",
+        "points": [
+          "Standard integrals: ∫x^n dx=x^(n+1)/(n+1)+C for n≠−1; ∫1/x dx=ln|x|+C.",
+          "Example: ∫_0^2 3x² dx=[x³]_0²=8.",
+          "GATE tip: do not append +C to a definite integral; mind negative signed areas."
+        ]
+      },
+      {
+        "heading": "Substitution and integration by parts",
+        "body": "Substitution changes variables to simplify a composite integrand: set u=g(x), du=g′(x)dx. Integration by parts: ∫u dv=uv−∫v du. For definite integrals, transform bounds if substituting.",
+        "points": [
+          "Example: ∫2x cos(x²)dx; set u=x², du=2x dx ⇒ sin(x²)+C.",
+          "Example: ∫x e^x dx = x e^x−∫e^x dx = e^x(x−1)+C.",
+          "GATE tip: differentiate your antiderivative to check it quickly."
+        ]
+      },
+      {
+        "heading": "Improper integrals and convergence",
+        "body": "An integral with infinite bounds or an unbounded integrand is improper and is defined via a limit. Convergence depends on that limit being finite.",
+        "points": [
+          "For p>1, ∫_1^∞ x^(−p) dx=1/(p−1); diverges for p≤1.",
+          "For p<1, ∫_0^1 x^(−p) dx=1/(1−p); diverges for p≥1.",
+          "Example: ∫_1^∞ 1/x² dx=[−1/x]_1^∞=1.",
+          "GATE tip: do not evaluate at ∞ as if it were an ordinary number; explicitly use limits."
+        ]
+      },
+      {
+        "heading": "Multivariable partial derivatives",
+        "body": "For f(x,y), ∂f/∂x differentiates with y held constant; ∂f/∂y holds x constant. A stationary point satisfies both first partial derivatives zero. The Hessian helps classify local extrema.",
+        "points": [
+          "Example: f=x²+xy+y²; ∂f/∂x=2x+y, ∂f/∂y=x+2y; only stationary point is (0,0).",
+          "Hessian [[2,1],[1,2]] has positive leading minor 2 and determinant 3, so positive definite: strict local minimum.",
+          "GATE tip: this is useful supporting calculus background; prioritize exact CS syllabus coverage if time is limited."
+        ]
+      },
+      {
+        "heading": "Calculus: quick revision",
+        "body": "Review limit identities, continuity vs differentiability, MVT hypotheses, optimization and integration techniques.",
+        "points": [
+          "Differentiable ⇒ continuous; converse false.",
+          "For interior differentiable extrema: f′=0 necessary, not sufficient.",
+          "∫_a^b f=F(b)−F(a), with F′=f.",
+          "GATE trap: global extrema on [a,b] can occur at endpoints."
+        ]
+      }
+    ]
+  },
+  "Engineering Mathematics::Probability and Statistics": {
+    "subject": "Engineering Mathematics",
+    "topic": "Probability and Statistics",
+    "overview": "Detailed concept explanations, worked examples and GATE exam guidance.",
+    "sections": [
+      {
+        "heading": "Sample spaces and basic probability",
+        "body": "A sample space Ω contains all possible outcomes. An event A⊆Ω is a set of outcomes. For equally likely outcomes P(A)=|A|/|Ω|. General axioms: 0≤P(A)≤1, P(Ω)=1, and disjoint events add.",
+        "points": [
+          "Complement: P(Aᶜ)=1−P(A).",
+          "Union: P(A∪B)=P(A)+P(B)−P(A∩B).",
+          "Example: rolling a fair die, probability of even number is 3/6=1/2.",
+          "GATE tip: do not use simple favourable/total counting unless elementary outcomes are equally likely."
+        ]
+      },
+      {
+        "heading": "Conditional probability and independence",
+        "body": "Conditional probability P(A|B)=P(A∩B)/P(B) when P(B)>0. Events A,B are independent if P(A∩B)=P(A)P(B). Mutually exclusive nonempty events cannot be independent if both have positive probability.",
+        "points": [
+          "Multiplication: P(A∩B)=P(A|B)P(B).",
+          "Example: draw two cards without replacement. P(both aces)=(4/52)(3/51)=1/221.",
+          "GATE tip: distinguish independence from disjointness; “without replacement” generally changes probabilities."
+        ]
+      },
+      {
+        "heading": "Bayes theorem and total probability",
+        "body": "When H_i form a partition of Ω, P(E)=Σ_i P(E|H_i)P(H_i). Bayes reverses conditioning: P(H_j|E)=P(E|H_j)P(H_j)/P(E).",
+        "points": [
+          "Example: disease prevalence 1%, test sensitivity 90%, false-positive rate 5%. P(positive)=0.9×0.01+0.05×0.99=0.0585.",
+          "Posterior P(disease|positive)=0.009/0.0585≈0.1538 (15.38%).",
+          "GATE tip: false-positive rate is P(+|no disease), NOT P(no disease|+)."
+        ]
+      },
+      {
+        "heading": "Random variables, PMF, PDF and CDF",
+        "body": "A random variable maps outcomes to numbers. For discrete X, PMF p(x)=P(X=x), with Σp(x)=1. For continuous X, PDF f(x)≥0 with ∫f(x)dx=1; probability at a single point is 0. CDF F(x)=P(X≤x) works for both.",
+        "points": [
+          "Discrete: F(x)=Σ_(t≤x)p(t); continuous: F(x)=∫_(−∞)^x f(t)dt.",
+          "Example: fair die X has p(k)=1/6 for k=1,…,6, and F(3)=P(X≤3)=3/6=1/2.",
+          "GATE tip: a PDF value can exceed 1; only total area must equal 1."
+        ]
+      },
+      {
+        "heading": "Expectation, variance and standard deviation",
+        "body": "Expectation E[X] is the weighted average: Σxp(x) for discrete or ∫xf(x)dx for continuous X. Variance Var(X)=E[(X−μ)²]=E[X²]−μ². Standard deviation σ=√Var(X).",
+        "points": [
+          "Linearity: E[aX+b]=aE[X]+b.",
+          "Variance: Var(aX+b)=a²Var(X).",
+          "Example: fair die E[X]=(1+2+3+4+5+6)/6=3.5; E[X²]=91/6; Var=91/6−(3.5)²=35/12.",
+          "GATE tip: variance is not linear; Var(X+Y) includes covariance unless independent/uncorrelated."
+        ]
+      },
+      {
+        "heading": "Mean, median, mode and spread",
+        "body": "Mean is arithmetic average; median splits ordered observations; mode is most frequent value. These describe different aspects of a distribution. Standard deviation measures spread around the mean.",
+        "points": [
+          "Example data 1,2,2,9: mean=14/4=3.5, median=(2+2)/2=2, mode=2.",
+          "Outliers strongly affect mean but often affect median less.",
+          "GATE tip: for even sample size, median is average of the two middle ordered values."
+        ]
+      },
+      {
+        "heading": "Bernoulli and binomial distributions",
+        "body": "Bernoulli(p) models one success/failure trial: P(X=1)=p, P(X=0)=1−p. Binomial(n,p) counts successes in n independent identical Bernoulli trials.",
+        "points": [
+          "Binomial PMF: P(X=k)=C(n,k)p^k(1−p)^(n−k).",
+          "Mean=np; variance=np(1−p).",
+          "Example: three fair coin tosses; P(exactly 2 heads)=C(3,2)(1/2)^2(1/2)=3/8.",
+          "GATE tip: independence and constant success probability are assumptions, not optional details."
+        ]
+      },
+      {
+        "heading": "Poisson distribution",
+        "body": "Poisson(λ) models counts in a fixed interval under a suitable random-event model. Its PMF is P(X=k)=e^(−λ)λ^k/k!, k=0,1,…. Mean and variance are both λ.",
+        "points": [
+          "Example: average 2 arrivals per minute; P(0 arrivals)=e^(−2)≈0.1353.",
+          "Poisson approximates Binomial(n,p) when n is large, p small, and np≈λ.",
+          "GATE tip: do not confuse λ (expected count) with a probability; λ can exceed 1."
+        ]
+      },
+      {
+        "heading": "Uniform distribution",
+        "body": "Discrete uniform means equal probability for each possible value. Continuous uniform U(a,b) has constant density 1/(b−a) on [a,b].",
+        "points": [
+          "For U(a,b): E[X]=(a+b)/2; Var(X)=(b−a)²/12.",
+          "Example: X~U(0,10). P(2≤X≤5)=(5−2)/(10−0)=0.3.",
+          "GATE tip: probabilities are areas under the density, not density values themselves."
+        ]
+      },
+      {
+        "heading": "Exponential distribution",
+        "body": "Exponential(rate λ>0) models waiting time in a Poisson process. PDF f(x)=λe^(−λx) for x≥0; CDF F(x)=1−e^(−λx). It has the memoryless property.",
+        "points": [
+          "Mean=1/λ; variance=1/λ².",
+          "P(X>t)=e^(−λt).",
+          "Example: λ=2 per hour, probability waiting longer than 1 hour is e^(−2)≈0.1353.",
+          "GATE tip: distinguish rate λ from mean waiting time 1/λ."
+        ]
+      },
+      {
+        "heading": "Normal distribution and standardization",
+        "body": "Normal(μ,σ²) is a symmetric bell-shaped continuous distribution. Standard normal Z=(X−μ)/σ has mean 0 and variance 1. Probabilities are calculated using the standard normal CDF Φ.",
+        "points": [
+          "P(X≤x)=Φ((x−μ)/σ).",
+          "Example: X~N(100,15²); P(X≤115)=Φ(1)≈0.8413.",
+          "Symmetry: Φ(−z)=1−Φ(z).",
+          "GATE tip: N(μ,σ²) uses variance as second parameter, not standard deviation."
+        ]
+      },
+      {
+        "heading": "Joint distributions and covariance",
+        "body": "For jointly distributed X,Y, independence means joint PMF/PDF factors into marginals. Cov(X,Y)=E[XY]−E[X]E[Y]. Correlation ρ=Cov/(σ_Xσ_Y) when variances positive.",
+        "points": [
+          "Var(X+Y)=Var(X)+Var(Y)+2Cov(X,Y).",
+          "If X and Y independent, Cov(X,Y)=0; converse is not generally true.",
+          "Example: Var(X)=4, Var(Y)=9, Cov=2 ⇒ Var(X+Y)=4+9+4=17.",
+          "GATE tip: uncorrelated does not necessarily imply independent."
+        ]
+      },
+      {
+        "heading": "Probability: quick revision",
+        "body": "Practice conditional probability trees, Bayes updates, discrete vs continuous variables, expectation/variance and named-distribution identification.",
+        "points": [
+          "Binomial: mean=np, variance=np(1−p). Poisson: mean=variance=λ.",
+          "Exponential: mean=1/λ, survival=e^(−λt). Uniform(a,b): mean=(a+b)/2.",
+          "Normal standardization: z=(x−μ)/σ.",
+          "GATE trap: conditional probabilities reverse only through Bayes theorem, not by swapping A and B."
+        ]
+      }
+    ]
+  },
+  "Digital Logic::Boolean Algebra and Minimization": {
+    "subject": "Digital Logic",
+    "topic": "Boolean Algebra and Minimization",
+    "overview": "GATE CSE study notes for Boolean Algebra and Minimization: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Boolean variables take values 0 or 1. AND is 1 only if both inputs are 1; OR is 1 if either input is 1; NOT complements a bit. Absorption A+AB=A follows by factoring A(1+B)=A.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "A minterm contains every variable once and is true for exactly one input row; canonical SOP ORs the minterms where F=1. A maxterm is false for exactly one row; canonical POS ANDs maxterms where F=0.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "A Karnaugh map places adjacent minterms in Gray-code order. Group 1,2,4,8... cells in the largest power-of-two rectangles; wraparound edges are adjacent. For F(A,B,C)=Σm(0,1,2,3), all four cells have A=0, hence F=A'.",
+        "points": [
+          "F=AB+AB′ = A(B+B′)=A."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "x+x′=1; x·x′=0; (x+y)′=x′y′",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Do not combine diagonal K-map cells or assume don't-cares must be included; include them only if they simplify the expression.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Digital Logic::Combinational and Sequential Circuits": {
+    "subject": "Digital Logic",
+    "topic": "Combinational and Sequential Circuits",
+    "overview": "GATE CSE study notes for Combinational and Sequential Circuits: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Combinational outputs depend only on current inputs. A 2:1 multiplexer implements Y=S' I0+S I1; a decoder maps an n-bit input to one of 2^n output lines.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Sequential circuits also depend on stored state. A D flip-flop samples D at its active clock edge; a level-sensitive latch follows input while enabled. A counter is a finite-state machine whose next state follows a specified transition rule.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "For a full adder with A=1,B=1,Cin=0, sum=A xor B xor Cin=0 and carry=AB+Cin(A xor B)=1. For a mod-6 counter, three flip-flops are needed because 2^2<6≤2^3.",
+        "points": [
+          "A 3-to-8 decoder activates one of 8 outputs for each 3-bit input."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Full adder: Sum=A⊕B⊕Cin; Cout=AB+Cin(A⊕B)",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Do not confuse a latch with an edge-triggered flip-flop or infer output from inputs alone in a sequential circuit.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Digital Logic::Number Representation and Arithmetic": {
+    "subject": "Digital Logic",
+    "topic": "Number Representation and Arithmetic",
+    "overview": "GATE CSE study notes for Number Representation and Arithmetic: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "An unsigned n-bit integer represents 0 through 2^n−1. Two's complement signed n-bit representation covers −2^(n−1) through 2^(n−1)−1; negating a bit pattern means complementing bits and adding 1.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Sign extension preserves a signed value by repeating the sign bit. In fixed-point representation the binary point has a fixed location; floating point represents a sign, exponent and significand and introduces rounding error.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "To encode −5 in 8-bit two's complement: 5=00000101, invert to 11111010, add 1 to obtain 11111011. Signed overflow occurs when two same-sign operands produce a result with the opposite sign.",
+        "points": [
+          "8-bit two’s-complement −5 = 11111011."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "n-bit two’s-complement range: −2ⁿ⁻¹ to 2ⁿ⁻¹−1",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Carry out of the most significant bit alone does not detect signed overflow; always distinguish signed and unsigned arithmetic.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Computer Organization and Architecture::Instruction Set and Addressing Modes": {
+    "subject": "Computer Organization and Architecture",
+    "topic": "Instruction Set and Addressing Modes",
+    "overview": "GATE CSE study notes for Instruction Set and Addressing Modes: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "An instruction set architecture defines programmer-visible instructions, registers, data types and addressing rules. Instruction formats allocate bits to opcode and operands; a fixed-width format simplifies decoding but may constrain immediate fields.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Immediate addressing embeds a value in the instruction; direct addressing uses the instruction's address field; register-indirect uses a register holding an address; base-plus-offset computes an effective address by addition.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "If base register R=1000 and signed displacement=24, effective address is 1024. If a load reads memory at that address, 1024 is the location, not necessarily the value loaded.",
+        "points": [
+          "If base=1000 and offset=24, EA=1024 for base+offset addressing."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Direct: EA=address field; indexed: EA=base/index sum (ISA dependent)",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Count instruction fetch and operand memory accesses separately; exact addressing semantics depend on the ISA.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Computer Organization and Architecture::ALU and Control Unit": {
+    "subject": "Computer Organization and Architecture",
+    "topic": "ALU and Control Unit",
+    "overview": "GATE CSE study notes for ALU and Control Unit: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "The arithmetic logic unit performs integer arithmetic, bitwise logic, shifts and comparisons. Status flags such as zero, carry, sign and overflow reflect operation results; flags are not interchangeable.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "A hardwired control unit generates control signals from combinational/sequential logic; microprogrammed control reads microinstructions from a control store. The control unit sequences fetch, decode, operand access, execute and write-back.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "For 10^9 instructions, CPI=2 and clock=1 GHz, CPU time = 10^9×2/(10^9)=2 seconds. Raising frequency without considering CPI does not necessarily reduce time proportionally.",
+        "points": [
+          "1e9 instructions at CPI=2 and 1 GHz take 2 seconds."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "CPU time = instruction count × CPI × clock period",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Distinguish instruction count, CPI, clock period, latency and throughput; units must be consistent.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Computer Organization and Architecture::Memory Hierarchy and Cache": {
+    "subject": "Computer Organization and Architecture",
+    "topic": "Memory Hierarchy and Cache",
+    "overview": "GATE CSE study notes for Memory Hierarchy and Cache: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Caches exploit temporal locality (recently used data is likely reused) and spatial locality (nearby addresses are likely used). Direct-mapped cache assigns one line per block index; set-associative cache allows a block in any way of its set.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "For byte-addressed memory, block-offset bits=log2(block bytes), set-index bits=log2(number of sets), tag bits=address bits−index−offset. Replacement algorithms such as LRU matter when a set is full.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "A 32-bit address, 16 KB 4-way cache, 64-byte blocks has 256 lines and 64 sets. Offset=6 bits, index=6 bits, tag=20 bits. If hit time=1 ns, miss rate=5%, miss penalty=40 ns, AMAT=3 ns.",
+        "points": [
+          "Hit time=1 ns, miss rate=0.05, penalty=40 ns gives AMAT=3 ns."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "AMAT = hit time + miss rate × miss penalty",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Do not confuse number of lines with number of sets, or omit dirty write-back penalties where specified.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Computer Organization and Architecture::I/O Interface": {
+    "subject": "Computer Organization and Architecture",
+    "topic": "I/O Interface",
+    "overview": "GATE CSE study notes for I/O Interface: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Programmed I/O polls a device register and consumes CPU time while waiting. Interrupt-driven I/O lets the device notify the CPU; servicing an interrupt incurs context and handler overhead.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Direct memory access (DMA) lets a controller transfer blocks between a device and memory after CPU setup. Bus arbitration determines which requester may use a shared bus.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "For a large disk block, DMA can reduce per-byte CPU intervention compared with programmed I/O; CPU still configures the transfer and may handle completion interrupt.",
+        "points": [
+          "A DMA controller can move a disk block to memory after setup."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "DMA transfers blocks with reduced CPU involvement",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "DMA does not mean the CPU performs zero work, and interrupt latency is different from data transfer time.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Computer Organization and Architecture::Instruction Pipelining": {
+    "subject": "Computer Organization and Architecture",
+    "topic": "Instruction Pipelining",
+    "overview": "GATE CSE study notes for Instruction Pipelining: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Pipelining overlaps stages of different instructions. With k equal-duration stages, ideal completion time for n instructions is (k+n−1) clock cycles; steady-state throughput approaches one instruction per cycle.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Structural hazards arise from shared hardware, data hazards from operand dependencies, and control hazards from branches. Forwarding resolves some RAW dependencies; load-use dependencies may still require a stall.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "A 5-stage ideal pipeline executing 10 instructions needs 5+10−1=14 cycles. If two bubbles are inserted, total becomes 16 cycles assuming no other penalties.",
+        "points": [
+          "A 5-stage pipeline finishes 10 instructions ideally in 5+10−1=14 cycles."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Ideal speedup approaches pipeline stage count for long workloads",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Pipeline depth does not make a single instruction finish k times faster; include fill, drain, stalls and branch penalties.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Programming and Data Structures::C Programming": {
+    "subject": "Programming and Data Structures",
+    "topic": "C Programming",
+    "overview": "GATE CSE study notes for C Programming: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "C distinguishes values, objects and addresses. An array stores contiguous elements; in most expressions its name converts to a pointer to its first element, but sizeof(array) in its defining scope gives total array bytes.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "A pointer's type controls dereference and arithmetic: p+1 advances by sizeof(*p) bytes. Automatic local objects typically have block lifetime; dynamically allocated objects remain until freed.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "For int a[]={4,5,6}, *(a+1)=5. If int occupies 4 bytes and a begins at address 1000, &a[2] is at 1008. Writing past a[2] is undefined behavior.",
+        "points": [
+          "For int a[3]={4,5,6}, *(a+1) is 5."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Pointer arithmetic advances by sizeof(pointed-to type)",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Do not assume order of evaluation where C leaves it unspecified; avoid reading uninitialized variables or dereferencing invalid pointers.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Programming and Data Structures::Recursion": {
+    "subject": "Programming and Data Structures",
+    "topic": "Recursion",
+    "overview": "GATE CSE study notes for Recursion: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "A recursive function must make progress toward a base case. Each active call has its own stack frame, so recursion depth influences auxiliary space.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "A recursive algorithm's runtime can be expressed by a recurrence. A single recursive call on n−1 with constant work gives T(n)=T(n−1)+O(1)=O(n); two calls on n−1 can grow exponentially.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "Factorial(4) expands to 4×factorial(3)=4×3×2×1=24. A naive Fibonacci implementation repeats subproblems; memoization avoids repeated evaluation.",
+        "points": [
+          "Factorial(4)=4×3×2×1=24."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "T(n)=T(n−1)+O(1) gives O(n)",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Separate number of recursive calls from maximum simultaneous stack depth; a missing base case can overflow the stack.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Programming and Data Structures::Arrays, Stacks and Queues": {
+    "subject": "Programming and Data Structures",
+    "topic": "Arrays, Stacks and Queues",
+    "overview": "GATE CSE study notes for Arrays, Stacks and Queues: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "An array provides O(1) random access because address(A[i])=base+(i−lowerBound)×elementSize. Insertion in the middle usually requires shifting O(n) elements.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "A stack follows last-in-first-out (push/pop), while a queue follows first-in-first-out (enqueue/dequeue). Circular arrays reuse freed slots via indices modulo capacity.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "With base address 100, element size 4 and zero-based index 3, address=112. A circular queue of capacity 5 advances rear from 4 to (4+1)%5=0.",
+        "points": [
+          "Base=100, 4-byte int, index=3 → address 112."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Array address = base + index × element size (zero-based)",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Distinguish queue full from queue empty; one common implementation reserves one slot, another tracks count.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Programming and Data Structures::Linked Lists": {
+    "subject": "Programming and Data Structures",
+    "topic": "Linked Lists",
+    "overview": "GATE CSE study notes for Linked Lists: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "A singly linked node stores data and a next pointer; a doubly linked node stores previous and next pointers. Linked nodes need not be contiguous in memory.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Given a pointer P to an existing node, insert N after P by setting N.next=P.next before P.next=N. Deleting a node requires updating predecessor links and freeing memory when appropriate.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "For list 2→5→9, inserting 7 after 5 gives 2→5→7→9. Searching for 9 still requires O(n) in the worst case; inserting after known 5 is O(1).",
+        "points": [
+          "Inserting after node P requires new.next=P.next then P.next=new."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Search O(n); insertion at known node O(1) when required pointers available",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "A singly linked list cannot generally delete its last node in O(1) without a predecessor; handle empty and head-node cases.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Programming and Data Structures::Trees, Heaps and Graphs": {
+    "subject": "Programming and Data Structures",
+    "topic": "Trees, Heaps and Graphs",
+    "overview": "GATE CSE study notes for Trees, Heaps and Graphs: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "A binary search tree maintains keys smaller than a node in its left subtree and larger keys in its right subtree under a no-duplicates convention. Search cost is O(h), where h is tree height.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "A binary heap is a complete binary tree with parent-child order; it does not globally sort all nodes. A graph adjacency matrix uses O(V²) space; adjacency lists use O(V+E) space.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "In a min-heap the root is the minimum. Insert by placing the new key at the last position and bubbling upward; a heap with n elements has height O(log n).",
+        "points": [
+          "In a min-heap, the root holds the minimum key."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Binary heap insert/delete O(log n); BST search O(h)",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "A skewed BST has O(n) worst-case search, unlike a balanced BST. A heap is not a BST.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Algorithms::Searching, Sorting and Hashing": {
+    "subject": "Algorithms",
+    "topic": "Searching, Sorting and Hashing",
+    "overview": "GATE CSE study notes for Searching, Sorting and Hashing: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Binary search requires sorted input and repeatedly halves the candidate interval, giving O(log n) comparisons. Linear search does not require sorting but can take O(n).",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Merge sort divides then merges in O(n log n) worst-case time and normally uses O(n) auxiliary space. Quick sort averages O(n log n) but can degrade to O(n²). Hash tables aim for expected O(1) lookup under suitable hashing and load.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "To search 23 in [3,8,12,17,23,31,44], inspect middle 17, then 31, then 23. Hash collisions can be handled by chaining or probing.",
+        "points": [
+          "Binary search on 16 sorted values needs at most 5 comparisons in standard worst case."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Binary search O(log n); mergesort O(n log n)",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Do not equate average and worst-case complexity; sorting stability and in-place behavior are independent properties.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Algorithms::Time and Space Complexity": {
+    "subject": "Algorithms",
+    "topic": "Time and Space Complexity",
+    "overview": "GATE CSE study notes for Time and Space Complexity: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Big-O gives an asymptotic upper bound, Ω a lower bound and Θ a tight bound. Ignore constant factors and lower-order terms when comparing growth as n→∞.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "For recurrences T(n)=aT(n/b)+f(n), compare f(n) to n^(log_b a) using the Master Theorem when its conditions apply. Amortized analysis bounds cost per operation across a sequence, not probability over random inputs.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "T(n)=2T(n/2)+n has a=2,b=2 and n^(log_2 2)=n, so T(n)=Θ(n log n). A loop doubling i each iteration executes Θ(log n) times.",
+        "points": [
+          "Nested loops each running n times give Θ(n²)."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "T(n)=2T(n/2)+n → Θ(n log n)",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Do not apply the Master Theorem to arbitrary recurrences such as T(n−1); distinguish auxiliary space from input storage.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Algorithms::Greedy Algorithms": {
+    "subject": "Algorithms",
+    "topic": "Greedy Algorithms",
+    "overview": "GATE CSE study notes for Greedy Algorithms: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "A greedy algorithm commits to a locally optimal choice. Correctness requires a greedy-choice property and optimal substructure; a plausible heuristic alone is not a proof.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Activity selection chooses the compatible activity with earliest finishing time and repeats. For fractional knapsack, sorting by value/weight ratio is optimal, unlike 0/1 knapsack.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "Activities (start,finish)=(1,3),(2,5),(4,6) yield selection (1,3) then (4,6). Choosing longest or highest-value activity first need not maximize the count.",
+        "points": [
+          "For activities [1,2],[2,4],[1,5], earliest-finish greedy picks first two."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Kruskal sorts edges then adds edges without cycles",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Show an exchange argument or counterexample; do not apply fractional-knapsack reasoning to indivisible items.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Algorithms::Dynamic Programming": {
+    "subject": "Algorithms",
+    "topic": "Dynamic Programming",
+    "overview": "GATE CSE study notes for Dynamic Programming: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Dynamic programming applies when subproblems overlap and optimal solutions contain optimal subsolutions. Memoization solves top-down with caching; tabulation fills states bottom-up.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Define state, recurrence, base cases and evaluation order. For 0/1 knapsack, DP[i,w] is maximum value using first i items within capacity w; choose skip or take if item fits.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "With weights [2,3], values [3,4], capacity 3, the best value is 4 by taking the second item; taking both exceeds capacity. Space can be reduced to a one-dimensional array updated in descending capacity order.",
+        "points": [
+          "Fibonacci DP computes each state once rather than repeating recursive subtrees."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "0/1 knapsack DP: dp[i,w]=max(dp[i−1,w], vᵢ+dp[i−1,w−wᵢ]) when feasible",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "A state definition that omits a necessary variable yields incorrect results; ascending updates in 0/1 knapsack can reuse an item.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Algorithms::Divide and Conquer": {
+    "subject": "Algorithms",
+    "topic": "Divide and Conquer",
+    "overview": "GATE CSE study notes for Divide and Conquer: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Divide-and-conquer partitions a problem into smaller independent pieces, solves them recursively, then combines results. Merge sort and binary search are standard examples.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Merge sort satisfies T(n)=2T(n/2)+Θ(n)=Θ(n log n). Binary search satisfies T(n)=T(n/2)+Θ(1)=Θ(log n). Quicksort partitioning can be badly unbalanced.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "For eight elements, merge sort creates two groups of four, then four groups of two, then merges sorted groups; there are log2(8)=3 merging levels.",
+        "points": [
+          "Divide 8 items into halves until singletons, then merge sorted halves."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Merge sort T(n)=2T(n/2)+Θ(n)=Θ(n log n)",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Divide-and-conquer subproblems need not overlap; distinguish it from dynamic programming and account for combine cost.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Algorithms::Graph Algorithms": {
+    "subject": "Algorithms",
+    "topic": "Graph Algorithms",
+    "overview": "GATE CSE study notes for Graph Algorithms: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "BFS explores a graph by distance in number of edges using a queue; DFS explores deeply using a stack or recursion. Both take O(V+E) on adjacency lists.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Dijkstra finds shortest paths with nonnegative edge weights. Bellman-Ford permits negative edges and can detect a reachable negative cycle. Kruskal and Prim construct minimum spanning trees in weighted undirected graphs.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "For edges A→B weight 2, A→C weight 5, B→C weight 1, shortest A→C path is A→B→C with cost 3, not direct cost 5.",
+        "points": [
+          "Unweighted shortest path from source is found by BFS."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "BFS O(V+E) with adjacency lists; Dijkstra needs nonnegative weights",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Do not use Dijkstra blindly with negative weights; shortest-path tree and minimum spanning tree optimize different objectives.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Theory of Computation::Regular Expressions and Finite Automata": {
+    "subject": "Theory of Computation",
+    "topic": "Regular Expressions and Finite Automata",
+    "overview": "GATE CSE study notes for Regular Expressions and Finite Automata: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "A DFA has exactly one transition for every state-symbol pair; an NFA may have multiple choices and epsilon transitions. Both recognize precisely the regular languages.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Regular expressions use union, concatenation and Kleene star. Thompson construction builds an epsilon-NFA from an expression; subset construction converts an NFA to a DFA.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "The regular expression (0 OR 1)*01 accepts all binary strings ending in 01, such as 01 and 1101, but rejects 010. A DFA can track the longest suffix matching the target.",
+        "points": [
+          "Language of binary strings ending in 1 can be recognized with two states."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "A DFA has exactly one transition for each state-symbol pair",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "A DFA cannot use a stack to count arbitrary nesting; distinguish substring containment from suffix matching.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Theory of Computation::Context-Free Grammars and PDA": {
+    "subject": "Theory of Computation",
+    "topic": "Context-Free Grammars and PDA",
+    "overview": "GATE CSE study notes for Context-Free Grammars and PDA: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "A context-free grammar has productions A→α with one nonterminal on the left. Derivations generate strings; parse trees expose grammatical structure. Ambiguity means a string has more than one distinct parse tree.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "A pushdown automaton extends finite-state control with a stack. Nondeterministic PDAs recognize CFLs; deterministic PDAs recognize a proper subset.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "Grammar S→aSb or ε generates a^n b^n. For n=2: S⇒aSb⇒aaSbb⇒aabb. A PDA pushes for each a and pops for each b.",
+        "points": [
+          "Grammar S→aSb | ε generates aⁿbⁿ for n≥0."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "CFG: productions A→α with one nonterminal on left",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Left recursion is not the same as ambiguity; not every CFL is deterministic context-free.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Theory of Computation::Pumping Lemma": {
+    "subject": "Theory of Computation",
+    "topic": "Pumping Lemma",
+    "overview": "GATE CSE study notes for Pumping Lemma: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "The regular pumping lemma says every sufficiently long string in a regular language can be decomposed as xyz, with xy length at most p, y nonempty, and xy^iz in the language for every nonnegative i.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "To disprove regularity, assume regularity and choose a carefully structured string. Every allowed decomposition must place the pumped part in a restricted region; choose an exponent that violates the language rule.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "For L={0^n1^n}, take p zeros followed by p ones. The pumped substring y consists only of zeros. Repeating it produces more zeros than ones, contradicting membership.",
+        "points": [
+          "For {0ⁿ1ⁿ}, choose 0ᵖ1ᵖ; pumping y of zeros breaks equality."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Regular: w=xyz, |xy|≤p, |y|>0, xyⁱz∈L for all i≥0",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "The pumping lemma is necessary but not sufficient for regularity; a single convenient split is not enough to prove nonregularity.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Theory of Computation::Turing Machines and Undecidability": {
+    "subject": "Theory of Computation",
+    "topic": "Turing Machines and Undecidability",
+    "overview": "GATE CSE study notes for Turing Machines and Undecidability: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "A Turing machine has finite control, an unbounded tape and a read/write head. A decider halts on every input; a recognizer may loop on strings not in its language.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "The halting problem asks whether a program halts on an input; no algorithm decides this for all program-input pairs. Mapping reductions transfer undecidability from one problem to another.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "If a hypothetical HALT decider existed, construct a program that loops when HALT predicts it halts and halts when HALT predicts it loops; running it on its own description gives a contradiction.",
+        "points": [
+          "A decider must halt on every input, unlike a recognizer."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Halting problem is undecidable",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Recognizable does not mean decidable; direction of reductions matters when proving undecidability.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Compiler Design::Lexical Analysis": {
+    "subject": "Compiler Design",
+    "topic": "Lexical Analysis",
+    "overview": "GATE CSE study notes for Lexical Analysis: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "A lexer converts source characters into tokens such as identifiers, keywords, numbers and operators. A lexeme is the concrete character sequence; a token is its category; a pattern describes valid lexemes.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Regular expressions specify token patterns and finite automata implement scanners. Longest-match rules resolve overlapping tokens; symbol tables retain identifiers and attributes.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "For input total=12;, a lexer may produce ID(total), ASSIGN, NUM(12), SEMICOLON. The lexeme total matches the identifier pattern but the token is ID.",
+        "points": [
+          "For x=12;, token classes include identifier, assignment, number, semicolon."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Lexer recognizes token classes; longest-match rule often applies",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Lexical analysis does not establish expression grammar or type correctness; keyword priority matters when identifiers match the same pattern.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Compiler Design::Parsing": {
+    "subject": "Compiler Design",
+    "topic": "Parsing",
+    "overview": "GATE CSE study notes for Parsing: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Top-down parsing predicts productions; LL(1) uses one lookahead token and FIRST/FOLLOW sets. Left recursion prevents direct predictive parsing and may need elimination.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Bottom-up LR parsing shifts input symbols and reduces handles to nonterminals. Shift/reduce conflicts indicate a table decision ambiguity; precedence and associativity can resolve some conflicts.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "For grammar E→T E', E'→+T E' or ε, T→id, FIRST(E)={id} and FIRST(E')={+,ε}. On input id+id, parser expands E then consumes id, +, id.",
+        "points": [
+          "For S→aS|ε, FIRST(S)={a,ε}."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "For A→ε, FOLLOW(A) influences predictive parsing table entries",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Do not put ε in FOLLOW sets; FIRST and FOLLOW have different purposes, and not every grammar is LL(1).",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Compiler Design::Syntax-Directed Translation": {
+    "subject": "Compiler Design",
+    "topic": "Syntax-Directed Translation",
+    "overview": "GATE CSE study notes for Syntax-Directed Translation: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "A syntax-directed definition attaches attributes and semantic rules to grammar productions. Synthesized attributes flow from children to parent; inherited attributes can flow from parent or siblings.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "An S-attributed definition uses only synthesized attributes and is convenient for bottom-up evaluation. L-attributed definitions constrain inherited dependencies for left-to-right evaluation.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "For production E→E1+T with E.val=E1.val+T.val, parsing 2+3 yields E.val=5 after child values are computed.",
+        "points": [
+          "Expression value E→E1+T may compute E.val=E1.val+T.val."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "S-attributed definitions use synthesized attributes only",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Attribute evaluation order must respect dependencies; an attribute grammar is not the same as the grammar's token syntax.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Compiler Design::Runtime Environments": {
+    "subject": "Compiler Design",
+    "topic": "Runtime Environments",
+    "overview": "GATE CSE study notes for Runtime Environments: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Runtime storage commonly includes code, static data, heap and stack. Activation records hold return addresses, parameters, locals and saved registers for procedure calls.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Lexical scoping resolves names using program nesting; dynamic scoping uses call history. Closures package code with an environment for free variables.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "If function f calls g, g's activation record is pushed above f's; returning from g restores the caller's state. A recursive call creates another activation record for the same function.",
+        "points": [
+          "Recursive factorial creates a new activation record per call."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Activation record may store return address, locals and saved registers",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Lifetime and scope are distinct: a heap object may outlive the stack frame that allocated it.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Compiler Design::Intermediate Code Generation": {
+    "subject": "Compiler Design",
+    "topic": "Intermediate Code Generation",
+    "overview": "GATE CSE study notes for Intermediate Code Generation: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Intermediate representations separate front-end language analysis from machine-specific back-end code generation. Three-address code uses operations such as t1=a+b and t2=t1*c.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Syntax trees represent expression structure; control-flow graphs represent basic blocks and possible transfers. Backpatching fills unresolved branch targets in generated code.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "For a+b*c, generate t1=b*c, t2=a+t1. This preserves multiplication precedence without relying on target-machine instruction syntax.",
+        "points": [
+          "a+b*c becomes t1=b*c; t2=a+t1."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Three-address statement: t1=a+b",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Do not confuse an abstract syntax tree with a concrete parse tree; temporary values and evaluation order matter.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Compiler Design::Optimization and Data Flow Analysis": {
+    "subject": "Compiler Design",
+    "topic": "Optimization and Data Flow Analysis",
+    "overview": "GATE CSE study notes for Optimization and Data Flow Analysis: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Compiler optimization preserves program behavior while reducing cost. Constant folding computes known expressions at compile time; common-subexpression elimination reuses an already computed value when operands have not changed.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Data-flow analysis computes facts across a control-flow graph. Reaching definitions use union at joins; available expressions typically use intersection. Liveness determines whether a variable's current value may be used later.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "For x=3*4; y=x+0;, constant folding gives x=12 and algebraic simplification can give y=x. If x is reassigned, a previous expression using x may no longer be reusable.",
+        "points": [
+          "If x=3 then y=x+2, constant propagation yields y=5."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Liveness: IN=USE ∪ (OUT−DEF)",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Optimizations must respect side effects, aliasing and language semantics; a transformation safe for pure expressions may be unsafe for volatile operations.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Operating System::Processes and Threads": {
+    "subject": "Operating System",
+    "topic": "Processes and Threads",
+    "overview": "GATE CSE study notes for Processes and Threads: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "A process has its own virtual address space and resources; threads in one process share memory while keeping separate execution stacks and register contexts.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Process states include ready, running and blocked. A context switch saves current execution state and restores another. User threads and kernel threads differ in scheduling visibility.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "Two threads incrementing a shared counter can lose an update if both read the same old value before writing. A mutex can protect the read-modify-write critical section.",
+        "points": [
+          "Arrival=2, completion=12, burst=6 → turnaround=10, waiting=4."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Turnaround = completion − arrival; waiting = turnaround − burst",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Concurrency does not imply parallel execution; sharing memory reduces isolation and requires synchronization.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Operating System::Concurrency and Synchronization": {
+    "subject": "Operating System",
+    "topic": "Concurrency and Synchronization",
+    "overview": "GATE CSE study notes for Concurrency and Synchronization: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "A race condition occurs when results depend on interleaving of unsynchronized operations. Mutual exclusion ensures only one thread enters a critical section at a time.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "A semaphore is a counter modified by atomic wait and signal operations. A binary semaphore can guard a resource; a counting semaphore can represent multiple available units. Monitors encapsulate shared state and condition waits.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "For a buffer of capacity N, initialize empty=N, full=0 and mutex=1. Producer waits empty and mutex, inserts, then signals mutex and full; consumer reverses full/empty roles.",
+        "points": [
+          "A mutex protects one shared counter update at a time."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Semaphore wait(P) decrements/blocks; signal(V) increments/wakes as defined",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Signal/wait order matters; using only a mutex does not enforce buffer-not-empty and buffer-not-full conditions.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Operating System::Deadlocks": {
+    "subject": "Operating System",
+    "topic": "Deadlocks",
+    "overview": "GATE CSE study notes for Deadlocks: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Deadlock requires mutual exclusion, hold-and-wait, no preemption and circular wait simultaneously. Breaking any necessary condition prevents deadlock.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "A resource-allocation graph shows process-resource relationships. Banker's algorithm tests whether granting a request leaves a safe sequence, assuming known maximum demands.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "If P1 holds R1 and waits R2 while P2 holds R2 and waits R1, both may wait forever. Enforcing a global order R1 before R2 prevents this cycle.",
+        "points": [
+          "Two processes each hold one lock and request the other: possible deadlock."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Mutual exclusion, hold-and-wait, no preemption, circular wait",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "An unsafe state is not necessarily deadlocked; cycles imply deadlock only under suitable resource-instance assumptions.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Operating System::CPU and I/O Scheduling": {
+    "subject": "Operating System",
+    "topic": "CPU and I/O Scheduling",
+    "overview": "GATE CSE study notes for CPU and I/O Scheduling: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "CPU scheduling selects a ready process. FCFS follows arrival order; SJF chooses shortest CPU burst; round robin preempts after a time quantum; priority scheduling may starve low-priority tasks.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Turnaround time=completion−arrival; waiting time=turnaround−CPU burst (when no I/O time is included); response time=first run−arrival.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "With all processes arriving at time 0, bursts P1=4,P2=2,P3=1, nonpreemptive SJF runs P3,P2,P1. Waiting times are 0,1,3; average=4/3.",
+        "points": [
+          "Bursts 3,5 arriving at 0 under FCFS → waits 0,3; average 1.5."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Average waiting = Σwaiting / number of processes",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Do not confuse waiting, response and turnaround; include arrival times and context-switch overhead if provided.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Operating System::Memory Management": {
+    "subject": "Operating System",
+    "topic": "Memory Management",
+    "overview": "GATE CSE study notes for Memory Management: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Paging splits virtual memory into fixed-size pages and physical memory into frames. A page table maps virtual page numbers to frame numbers; offset bits are preserved.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "A TLB caches address translations. Page faults trigger OS handling when a needed page is absent; replacement policies include FIFO and LRU. Thrashing occurs when excessive faults dominate useful work.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "With 4 KB pages, offset=12 bits. Virtual address 0x12345 has page number 0x12 and offset 0x345; physical address uses the mapped frame number plus 0x345.",
+        "points": [
+          "4 KiB pages require 12 offset bits for byte addresses."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Effective access time depends on TLB hit/miss path",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Page size determines offset bits, not frame-number bits; a TLB miss is not necessarily a page fault.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Operating System::File Systems": {
+    "subject": "Operating System",
+    "topic": "File Systems",
+    "overview": "GATE CSE study notes for File Systems: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "A file system maps names to metadata and storage blocks. Inodes or analogous structures store attributes and block pointers; directories map names to file identifiers.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Contiguous allocation gives efficient sequential access but external fragmentation; linked allocation eases growth but hurts random access; indexed allocation supports direct block lookup.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "For a 12-byte direct-block pointer and 4 KB block size, a file using three direct data blocks stores at most 12 KB of data, excluding metadata. Actual inode limits depend on its pointer layout.",
+        "points": [
+          "A Unix-style inode stores metadata and block pointers, not the filename itself."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Indexed allocation uses an index block or inode pointers",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "File descriptor, inode and filename are different concepts; hard links and symbolic links have different semantics.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Databases::ER Model": {
+    "subject": "Databases",
+    "topic": "ER Model",
+    "overview": "GATE CSE study notes for ER Model: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Entity sets represent objects; attributes describe them; relationships connect entity sets. Cardinality constraints express one-to-one, one-to-many or many-to-many participation.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "A weak entity depends on an owner entity for identification. Mapping an M:N relationship to tables usually requires a separate relation containing foreign keys to both participating entity tables.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "Student(SID,Name) and Course(CID,Title) with M:N Enrolls become Enrollment(SID,CID,Grade), where (SID,CID) can be a composite key if each enrollment is unique.",
+        "points": [
+          "Department–Employee often modeled 1:N if each employee belongs to one department."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "1:N relationship: one entity instance can relate to many on other side",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Participation (mandatory/optional) and cardinality (1:N/M:N) answer different questions.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Databases::Relational Model and SQL": {
+    "subject": "Databases",
+    "topic": "Relational Model and SQL",
+    "overview": "GATE CSE study notes for Relational Model and SQL: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "A relation is a set of tuples with attributes; keys uniquely identify tuples. Selection filters rows, projection selects columns and join combines related tuples.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "SQL SELECT-FROM-WHERE filters rows; GROUP BY aggregates groups; HAVING filters groups. INNER JOIN keeps matching rows; LEFT JOIN also keeps unmatched left rows with NULLs.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "SELECT dept, COUNT(*) FROM Employee GROUP BY dept HAVING COUNT(*)>2; returns departments with at least three employees. COUNT(*) counts rows, while COUNT(column) ignores NULL values.",
+        "points": [
+          "SELECT dept, COUNT(*) FROM emp GROUP BY dept HAVING COUNT(*)>3;"
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "σ filters rows; π projects columns; HAVING filters groups",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "SQL uses bag semantics by default; DISTINCT removes duplicates, and comparisons with NULL yield UNKNOWN.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Databases::Integrity Constraints and Normalization": {
+    "subject": "Databases",
+    "topic": "Integrity Constraints and Normalization",
+    "overview": "GATE CSE study notes for Integrity Constraints and Normalization: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Integrity constraints include domain rules, primary keys, foreign keys and checks. Functional dependency X→Y means any two tuples agreeing on X must agree on Y.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "2NF eliminates partial dependency of non-prime attributes on a proper subset of a candidate key; 3NF restricts transitive dependency; BCNF requires every nontrivial FD determinant to be a superkey.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "In Enrollment(StudentID,CourseID,StudentName), if StudentID→StudentName and key is (StudentID,CourseID), StudentName depends on only part of the key; split Student(StudentID,StudentName) from Enrollment(StudentID,CourseID).",
+        "points": [
+          "R(A,B,C), A→B, B→C: A is a candidate key; B→C violates BCNF."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "BCNF: for every nontrivial FD X→Y, X is a superkey",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Normalization aims to reduce anomalies; a lossless decomposition and dependency preservation are separate properties.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Databases::File Organization and Indexing": {
+    "subject": "Databases",
+    "topic": "File Organization and Indexing",
+    "overview": "GATE CSE study notes for File Organization and Indexing: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Heap files store records without sorted key order; sorted files support ordered access but insertion can be expensive. Hash file organization uses a hash function to choose buckets.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "A B+ tree keeps search keys in internal nodes and record references at leaves, with leaves linked for range scans. Dense indexes may have an entry per search-key value or record depending on definition; sparse indexes sample blocks.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "For an index on salary, SELECT ... WHERE salary BETWEEN 30000 AND 50000 can use a B+ tree range scan. A hash index is efficient for equality but not ordered ranges.",
+        "points": [
+          "A B+ tree range query scans consecutive leaf entries after locating start."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "B+ tree keeps record pointers typically at leaves; internal nodes guide search",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "A clustered index determines physical or logical record ordering; distinguish index height from number of records scanned.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Databases::Transactions and Concurrency Control": {
+    "subject": "Databases",
+    "topic": "Transactions and Concurrency Control",
+    "overview": "GATE CSE study notes for Transactions and Concurrency Control: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "A transaction groups operations with ACID properties: atomicity, consistency, isolation and durability. COMMIT makes changes permanent; ROLLBACK cancels uncommitted work.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Conflict serializability can be tested using a precedence graph; a cycle means the schedule is not conflict-serializable. Two-phase locking grows then shrinks lock holdings and ensures conflict serializability, but can deadlock.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "Schedule R1(X),W1(X),R2(X),W2(X) has T1→T2 conflict edges. If another item creates T2→T1, the precedence graph has a cycle and schedule is not conflict-serializable.",
+        "points": [
+          "If T1 writes X before T2 reads X, precedence edge T1→T2."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Conflict-serializable iff precedence graph is acyclic",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Serializable does not mean transactions literally run one after another; distinguish recoverability, cascadelessness and strictness.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Computer Networks::Network Layering and Switching": {
+    "subject": "Computer Networks",
+    "topic": "Network Layering and Switching",
+    "overview": "GATE CSE study notes for Network Layering and Switching: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Layering separates concerns: application protocols use transport services; transport uses network delivery; link protocols move frames across one hop. Encapsulation adds headers at successive layers.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Circuit switching reserves a path or resources for a connection; packet switching forwards independent packets and shares links statistically. Store-and-forward switches receive a packet before transmitting it onward.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "A 1000-byte packet on a 1 Mbps link takes 8000/10^6=0.008 seconds=8 ms to serialize, excluding propagation and queueing.",
+        "points": [
+          "1000-bit frame at 1 Mbps takes 1 ms to transmit."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Transmission delay=L/R; propagation delay=d/s",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Transmission delay is packet bits/link rate; propagation delay is distance/signal speed. Do not interchange them.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Computer Networks::Data Link Layer and Ethernet": {
+    "subject": "Computer Networks",
+    "topic": "Data Link Layer and Ethernet",
+    "overview": "GATE CSE study notes for Data Link Layer and Ethernet: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "The data-link layer frames packets, detects errors and coordinates medium access. CRC uses polynomial division to detect many bit-error patterns; it does not generally correct errors.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Ethernet frames carry source/destination MAC addresses. Switches learn source MAC-to-port mappings and forward known unicasts to one port, flooding unknown unicasts within a VLAN.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "If a switch learns host A on port 1 and host B on port 2, a frame from A to B is forwarded only to port 2 after B's location is known.",
+        "points": [
+          "Parity bit detects any odd number of bit errors, not all even errors."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "CRC uses modulo-2 polynomial division",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "MAC addresses operate at link layer, IP addresses at network layer; collisions and broadcast domains are different concepts.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Computer Networks::Routing Algorithms": {
+    "subject": "Computer Networks",
+    "topic": "Routing Algorithms",
+    "overview": "GATE CSE study notes for Routing Algorithms: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Distance-vector routing exchanges distance estimates with neighbors and is related to Bellman-Ford. Link-state routing floods topology information and computes shortest paths with Dijkstra.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "A router's forwarding table selects the next hop using destination prefix matching. Routing protocols compute paths; forwarding applies the table to each packet.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "If route A→B costs 2 and B→C costs 3, A's route via B to C costs 5. A direct route cost 8 is worse, assuming additive link costs.",
+        "points": [
+          "Router uses next hop from forwarding table, not full end-to-end path in packet."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Dijkstra computes shortest paths for nonnegative edge weights",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Distance-vector protocols can experience count-to-infinity; shortest paths depend on metrics, not merely hop count.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Computer Networks::IPv4, CIDR and NAT": {
+    "subject": "Computer Networks",
+    "topic": "IPv4, CIDR and NAT",
+    "overview": "GATE CSE study notes for IPv4, CIDR and NAT: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "IPv4 addresses have 32 bits. CIDR /p means p prefix bits and 32−p host bits; a subnet has 2^(32−p) addresses before special-address considerations.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Longest-prefix matching selects the most specific matching route. NAT translates private addresses/ports to public ones, often allowing multiple internal hosts to share one public address.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "192.168.1.130/26 belongs to subnet 192.168.1.128/26; the block size is 64 addresses, from .128 through .191.",
+        "points": [
+          "192.168.1.0/26 covers .0–.63; typical usable hosts .1–.62."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "IPv4 /26 subnet has 2^(32−26)=64 addresses",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Do not confuse subnet address count with usable host count; point-to-point and special prefixes have exceptions.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Computer Networks::TCP": {
+    "subject": "Computer Networks",
+    "topic": "TCP",
+    "overview": "GATE CSE study notes for TCP: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "TCP provides a reliable, ordered byte stream using sequence numbers, acknowledgments, retransmission and flow control. It is connection-oriented and typically starts with a three-way handshake.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Flow control limits sender data based on receiver-advertised window; congestion control adjusts sending based on perceived network congestion. RTT and retransmission timeout influence recovery.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "If sender transmits bytes with sequence numbers 1000–1499, the next expected ACK is 1500 (assuming all bytes arrive in order). ACKs refer to the next expected byte, not packet count.",
+        "points": [
+          "Window 64 KiB and RTT 0.1 s gives about 655360 bytes/s."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Window-limited throughput approximately window/RTT when no other bottleneck",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "TCP preserves byte order, not application message boundaries; flow control and congestion control are different mechanisms.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "Computer Networks::DNS and HTTP": {
+    "subject": "Computer Networks",
+    "topic": "DNS and HTTP",
+    "overview": "GATE CSE study notes for DNS and HTTP: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "DNS resolves names to records such as A (IPv4), AAAA (IPv6), MX (mail exchange) and CNAME (alias). Recursive resolvers cache answers according to TTL.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "HTTP uses request methods such as GET, POST, PUT and DELETE with status codes. HTTPS runs HTTP over TLS to provide authenticated encrypted transport under normal validation.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "A browser may resolve example.com to an IP address, establish TCP/TLS, send GET / and receive 200 OK with a response body. A 404 means the requested resource was not found.",
+        "points": [
+          "HTTP GET retrieves a representation; DNS resolves a name before connection when uncached."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "DNS A record maps hostname to IPv4 address",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "DNS does not itself transfer webpage content; HTTP is stateless at protocol level, with cookies/sessions providing continuity.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "General Aptitude::Verbal Aptitude": {
+    "subject": "General Aptitude",
+    "topic": "Verbal Aptitude",
+    "overview": "GATE CSE study notes for Verbal Aptitude: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Reading comprehension asks for main idea, inference and author attitude. An inference must follow from the passage rather than outside assumptions.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Sentence correction tests subject-verb agreement, tense, parallelism, modifiers and pronoun reference. Vocabulary questions depend on context rather than memorized isolated meanings.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "Sentence 'Each of the students are ready' is corrected to 'Each of the students is ready' because the head subject each is singular.",
+        "points": [
+          "“Neither of the answers is correct” uses singular verb in formal agreement."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Use context and grammatical agreement to eliminate options",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Avoid extreme options in inference questions unless the passage explicitly supports them; check grammar around the actual subject.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "General Aptitude::Quantitative Aptitude": {
+    "subject": "General Aptitude",
+    "topic": "Quantitative Aptitude",
+    "overview": "GATE CSE study notes for Quantitative Aptitude: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Percentages describe ratios per hundred; a percentage change is (new−old)/old×100. Successive percentage changes multiply their factors rather than add directly.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "Speed=distance/time; work rates add when workers operate independently; compound interest uses A=P(1+r)^n for annual compounding at rate r.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "A price rises 20% then falls 20%: final factor=1.2×0.8=0.96, so net change is a 4% decrease, not zero.",
+        "points": [
+          "Price 200→250 means 25% increase."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Percentage change=(new−old)/old ×100",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Distinguish percentage points from percent change; verify units and whether interest is simple or compounded.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "General Aptitude::Analytical Aptitude": {
+    "subject": "General Aptitude",
+    "topic": "Analytical Aptitude",
+    "overview": "GATE CSE study notes for Analytical Aptitude: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Analytical reasoning includes ordering, constraints, deductions and data interpretation. Translate statements into explicit variables and logical constraints before trying cases.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "For arrangement puzzles, draw slots and apply definite conditions first. For syllogisms, distinguish universal statements, existence claims and invalid converses.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "If A is before B and B is before C, transitivity implies A is before C. But 'all A are B' does not imply 'all B are A'.",
+        "points": [
+          "All A are B; all B are C ⇒ all A are C."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Valid inference: if P→Q and P, then Q",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Do not assume unstated existence from a universal claim; a single counterexample invalidates a universal deduction.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  },
+  "General Aptitude::Spatial Aptitude": {
+    "subject": "General Aptitude",
+    "topic": "Spatial Aptitude",
+    "overview": "GATE CSE study notes for Spatial Aptitude: concepts, explanations, solved reasoning, formulas and exam traps.",
+    "sections": [
+      {
+        "heading": "Core concept and meaning",
+        "body": "Spatial aptitude involves mentally rotating shapes, recognizing mirror reflections, folding nets and counting hidden or visible components. A rotation preserves orientation, lengths and adjacency; reflection reverses handedness.",
+        "points": [
+          "Identify what the concept represents and the conditions under which it applies."
+        ]
+      },
+      {
+        "heading": "Important subtopics and how they work",
+        "body": "For cube nets, identify opposite faces by folding relationships; faces sharing an edge in the net cannot become opposite. In counting cubes, systematically classify corners, edges, faces and interior positions.",
+        "points": [
+          "Compare related ideas by their definitions and operational behavior."
+        ]
+      },
+      {
+        "heading": "Worked explanation and example",
+        "body": "A 3×3×3 cube made of unit cubes has 27 small cubes. If its outside is painted, exactly one interior cube has zero painted faces, while eight corner cubes have three painted faces.",
+        "points": [
+          "A square rotated 90° retains side lengths and area."
+        ]
+      },
+      {
+        "heading": "Key formula or rule",
+        "body": "Rotation preserves lengths and angles",
+        "points": [
+          "Check assumptions, boundary cases and units before applying a rule."
+        ]
+      },
+      {
+        "heading": "Common GATE traps and exam approach",
+        "body": "Do not confuse a mirror image with a 180-degree rotation; use invariant adjacency and face orientation to eliminate options.",
+        "points": [
+          "For numerical questions, write known values and assumptions before substitution.",
+          "For conceptual MCQs, test edge cases and counterexamples."
+        ]
+      }
+    ]
+  }
+}

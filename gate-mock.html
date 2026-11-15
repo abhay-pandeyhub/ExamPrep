@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GATE Mock Test | ExamPrep</title>
+  <link rel="stylesheet" href="css/gate-mock.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo">ExamPrep</a>
+    <h2>GATE CSE Mock Test</h2>
+    <a href="gate-mock-history.html">My Results</a>
+  </header>
+
+  <main class="container">
+
+    <!-- Mock Test Dashboard -->
+    <section id="mockDashboard">
+
+      <h1>GATE Mock Test Series</h1>
+      <p>
+        Practice GATE CSE questions and
+        improve your exam preparation.
+      </p>
+
+      <div class="test-card">
+        <h2>Full-Length GATE Mock Test</h2>
+        <p>65 Questions | 100 Marks | 180 Minutes</p>
+        <button id="fullMockBtn">
+          Start Full Mock
+        </button>
+      </div>
+
+      <div class="test-card">
+        <h2>Subject-wise Mock Test</h2>
+        <p>Select a subject to practice.</p>
+
+        <select id="subjectSelect">
+          <option value="">Select Subject</option>
+          <option>Engineering Mathematics</option>
+          <option>Digital Logic</option>
+          <option>Computer Organization and Architecture</option>
+          <option>Programming and Data Structures</option>
+          <option>Algorithms</option>
+          <option>Theory of Computation</option>
+          <option>Compiler Design</option>
+          <option>Operating Systems</option>
+          <option>Databases</option>
+          <option>Computer Networks</option>
+          <option>General Aptitude</option>
+        </select>
+
+        <button id="subjectMockBtn">
+          Start Subject Test
+        </button>
+      </div>
+
+    </section>
+
+>
+
+    <!-- Actual Exam Interface -->
+    <section id="examScreen" hidden>
+
+      <div class="exam-topbar">
+        <h2 id="examTitle">GATE Mock Test</h2>
+        <p>Time Left: <span id="timer">03:00:00</span></p>
+      </div>
+
+      <div class="exam-layout">
+
+        <div class="question-area">
+          <p id="questionNumber">Question 1</p>
+          <p id="questionMarks"></p>
+
+          <h3 id="questionText"></h3>
+
+          <div id="answerOptions"></div>
+
+          <div class="navigation-buttons">
+            <button id="previousBtn">Previous</button>
+            <button id="reviewBtn">Mark for Review</button>
+            <button id="nextBtn">Save & Next</button>
+          </div>
+        </div>
+
+        <aside class="question-sidebar">
+          <h3>Question Palette</h3>
+          <div id="questionPalette"></div>
+          <button id="submitTestBtn">Submit Test</button>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- Result Screen -->
+    <section id="resultScreen" hidden>
+      <h1>Mock Test Result</h1>
+      <div id="resultSummary"></div>
+      <div id="resultSolutions"></div>
+      <button id="backToDashboardBtn">
+        Back to Dashboard
+      </button>
+    </section>
+
+  </main>
+
+  <script src="js/gate-mock.js"></script>
+</body>
+</html>

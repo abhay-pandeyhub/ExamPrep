@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Options | ExamPrep</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h2>ExamPrep</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="exam-options">
+
+        <h1>Choose Your Preparation Mode</h1>
+
+        <p class="options-subtitle">
+            Select how you want to prepare for your examination.
+        </p>
+
+        <div class="selected-details">
+            <h3>Your Academic Selection</h3>
+            <p id="academicDetails">Loading...</p>
+        </div>
+
+        <div class="options-grid">
+
+            <div class="option-card">
+                <div class="option-icon">📚</div>
+                <h2>PYQ Library</h2>
+                <p>
+                    Access previous-year question papers
+                    organized by subject and semester.
+                </p>
+                <button onclick="openModule('pyq')">
+                    Explore PYQs
+                </button>
+            </div>
+
+            <div class="option-card">
+                <div class="option-icon">📝</div>
+                <h2>MCQ Mock Test</h2>
+                <p>
+                    Attempt timed MCQ tests and receive
+                    automatic marks and results.
+                </p>
+                <button onclick="openModule('mcq')">
+                    Start Mock Test
+                </button>
+            </div>
+
+            <div class="option-card">
+                <div class="option-icon">📄</div>
+                <h2>Written Mock Test</h2>
+                <p>
+                    Generate 100-mark theory papers
+                    following the 3-hour UTU pattern.
+                </p>
+                <button onclick="openModule('written')">
+                    Generate Paper
+                </button>
+            </div>
+
+            <div class="option-card">
+                <div class="option-icon">📊</div>
+                <h2>My Performance</h2>
+                <p>
+                    View previous mock test scores
+                    and track your examination progress.
+                </p>
+                <button onclick="openModule('performance')">
+                    View Performance
+                </button>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 ExamPrep | UTU B.Tech CSE</p>
+    </footer>
+
+    <script src="js/exam-options.js"></script>
+</body>
+</html>

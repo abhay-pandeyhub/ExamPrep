@@ -1,0 +1,497 @@
+
+/* ===================================
+   EXAMPREP - GATE MOCK TEST
+   =================================== */
+
+/* ---------- GLOBAL STYLES ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #4f46e5;
+  --primary-dark: #3730a3;
+  --background: #f5f7fb;
+  --white: #ffffff;
+  --text: #1e293b;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --success: #16a34a;
+  --danger: #dc2626;
+  --warning: #f59e0b;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ---------- HEADER ---------- */
+
+.header {
+  background: var(--white);
+  padding: 18px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+.header .logo {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.header h2 {
+  font-size: 19px;
+}
+
+.header a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.header a:hover {
+  color: var(--primary-dark);
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+
+.container {
+  width: 90%;
+  max-width: 1250px;
+  margin: 35px auto;
+}
+
+/* Keep hidden screens invisible */
+[hidden] {
+  display: none !important;
+}
+
+/* ---------- DASHBOARD ---------- */
+
+#mockDashboard h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#mockDashboard > p {
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+
+.test-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  border: 1px solid var(--border);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.test-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.test-card h2 {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+.test-card p {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+/* ---------- BUTTONS ---------- */
+
+button {
+  background: var(--primary);
+  color: var(--white);
+  padding: 12px 22px;
+  border: none;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: var(--primary-dark);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 3px solid #a5b4fc;
+  outline-offset: 2px;
+}
+
+/* ---------- SUBJECT SELECT ---------- */
+
+#subjectSelect {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  padding: 13px;
+  margin-bottom: 18px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--white);
+  font-size: 15px;
+  color: var(--text);
+}
+
+/* ---------- EXAM SCREEN ---------- */
+
+.exam-topbar {
+  background: var(--white);
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid var(--border);
+}
+
+.exam-topbar h2 {
+  font-size: 22px;
+}
+
+.exam-topbar p {
+  background: #eef2ff;
+  color: var(--primary-dark);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+#timer {
+  font-size: 20px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- EXAM LAYOUT ---------- */
+
+.exam-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(260px, 1fr);
+  gap: 25px;
+  align-items: start;
+}
+
+/* ---------- QUESTION AREA ---------- */
+
+.question-area {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  min-height: 420px;
+}
+
+#questionNumber {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#questionMarks {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+#questionText {
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  white-space: pre-wrap;
+}
+
+/* ---------- ANSWER OPTIONS ---------- */
+
+#answerOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+#answerOptions label,
+.answer-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+  background: #fafbff;
+  transition: 0.2s;
+}
+
+#answerOptions label:hover,
+.answer-option:hover {
+  border-color: var(--primary);
+  background: #eef2ff;
+}
+
+#answerOptions input[type="radio"],
+#answerOptions input[type="checkbox"] {
+  margin-top: 5px;
+  accent-color: var(--primary);
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+#answerOptions input[type="number"],
+#answerOptions input[type="text"] {
+  padding: 13px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 16px;
+}
+
+/* ---------- NAVIGATION ---------- */
+
+.navigation-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+#previousBtn {
+  background: #475569;
+}
+
+#previousBtn:hover {
+  background: #334155;
+}
+
+#reviewBtn {
+  background: var(--warning);
+  color: #1e293b;
+}
+
+#reviewBtn:hover {
+  background: #d97706;
+  color: white;
+}
+
+#nextBtn {
+  background: var(--primary);
+}
+
+/* ---------- QUESTION SIDEBAR ---------- */
+
+.question-sidebar {
+  background: var(--white);
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+
+.question-sidebar h3 {
+  margin-bottom: 20px;
+  font-size: 19px;
+}
+
+#questionPalette {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+#questionPalette button {
+  padding: 10px 0;
+  border-radius: 7px;
+  font-size: 13px;
+  background: #e2e8f0;
+  color: var(--text);
+}
+
+#questionPalette button:hover {
+  background: #cbd5e1;
+}
+
+/* Question status classes */
+
+#questionPalette button.answered {
+  background: var(--success);
+  color: white;
+}
+
+#questionPalette button.not-answered {
+  background: var(--danger);
+  color: white;
+}
+
+#questionPalette button.review {
+  background: #7c3aed;
+  color: white;
+}
+
+#questionPalette button.current {
+  outline: 3px solid #0f172a;
+  outline-offset: 2px;
+}
+
+#submitTestBtn {
+  width: 100%;
+  background: var(--success);
+}
+
+#submitTestBtn:hover {
+  background: #15803d;
+}
+
+/* ---------- RESULT SCREEN ---------- */
+
+#resultScreen h1 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+#resultSummary {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  margin-bottom: 25px;
+}
+
+#resultSummary h2 {
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+#resultSummary p {
+  margin-bottom: 10px;
+}
+
+#resultSolutions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+#resultSolutions > div,
+.solution-card {
+  background: var(--white);
+  padding: 22px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.solution-card h3 {
+  margin-bottom: 12px;
+}
+
+.solution-card p {
+  margin-bottom: 8px;
+}
+
+.correct {
+  color: var(--success);
+  font-weight: bold;
+}
+
+.incorrect {
+  color: var(--danger);
+  font-weight: bold;
+}
+
+#backToDashboardBtn {
+  margin-bottom: 30px;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+@media (max-width: 900px) {
+  .exam-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .question-sidebar {
+    order: -1;
+  }
+
+  #questionPalette {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 15px;
+    flex-wrap: wrap;
+  }
+
+  .header h2 {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 94%;
+    margin: 20px auto;
+  }
+
+  #mockDashboard h1 {
+    font-size: 25px;
+  }
+
+  .test-card,
+  .question-area,
+  .question-sidebar {
+    padding: 20px;
+  }
+
+  .exam-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #questionText {
+    font-size: 17px;
+  }
+
+  #questionPalette {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .navigation-buttons button {
+    flex: 1;
+    min-width: 130px;
+  }
+}
